@@ -1,0 +1,288 @@
+.color__blanco {
+  color: white; }
+
+.color__gold {
+  color: #a3790e; }
+
+.color__blanco--twitter:hover {
+  color: #41aaeb; }
+
+.color__blanco--facebook:hover {
+  color: #181877; }
+
+.color__blanco--instagram:hover {
+  color: #992f6d; }
+
+.entrevista__color {
+  color: #a3790e; }
+
+.footer__fuente {
+  color: white; }
+
+.font__encabezado {
+  color: white; }
+
+.font__parrafo {
+  color: white; }
+
+.font__encabezado--fideos {
+  color: black; }
+
+.font__parrafo--fideos {
+  color: black; }
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.row {
+  display: flex; }
+
+.d-flex {
+  justify-content: center; }
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.color__blanco {
+  color: white; }
+
+.color__gold {
+  color: #a3790e; }
+
+.color__blanco--twitter:hover {
+  color: #41aaeb; }
+
+.color__blanco--facebook:hover {
+  color: #181877; }
+
+.color__blanco--instagram:hover {
+  color: #992f6d; }
+
+.entrevista__color {
+  color: #a3790e; }
+
+.footer__fuente {
+  color: white; }
+
+.font__encabezado {
+  color: white; }
+
+.font__parrafo {
+  color: white; }
+
+.font__encabezado--fideos {
+  color: black; }
+
+.font__parrafo--fideos {
+  color: black; }
+
+.padding {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.padding__top {
+  padding-top: 40px; }
+
+.padding__botton {
+  padding-bottom: 40px; }
+
+.padding__top--botton {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.padding__redes {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+  text-decoration: none; }
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px; }
+
+.d-flex {
+  justify-content: center; }
+
+.footer__margin {
+  margin-bottom: 3px; }
+
+.boxMod__contactos {
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+
+.boxMod__nosotros {
+  padding-top: 45px;
+  padding-bottom: 45px; }
+
+.boxMod__entrevista {
+  padding-top: 50px;
+  padding-bottom: 25px; }
+
+.boxMod__border {
+  border-style: solid; }
+
+.boxMod__centrar--elemento {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+@media only screen and (min-width: 1024px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end; } }
+
+.color__blanco {
+  color: white; }
+
+.color__gold {
+  color: #a3790e; }
+
+.color__blanco--twitter:hover {
+  color: #41aaeb; }
+
+.color__blanco--facebook:hover {
+  color: #181877; }
+
+.color__blanco--instagram:hover {
+  color: #992f6d; }
+
+.entrevista__color {
+  color: #a3790e; }
+
+.footer__fuente {
+  color: white; }
+
+.font__encabezado {
+  color: white; }
+
+.font__parrafo {
+  color: white; }
+
+.font__encabezado--fideos {
+  color: black; }
+
+.font__parrafo--fideos {
+  color: black; }
+
+.fondo {
+  background-color: #d1af59;
+  width: 100%; }
+
+.contenido__background {
+  background-color: #003614; }
+
+.footer__background {
+  background-color: #003614; }
+
+.background__verde {
+  background-color: #003614; }
+
+.background__gold {
+  background-color: #d1af59; }
+
+.font__google {
+  font-family: 'Jost', sans-serif;
+  font-weight: 600; }
+
+.fuente__google--contenido {
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+  text-align: left;
+  color: black; }
+
+.fuente__google--navbar {
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+  color: black; }
+
+.fuente__google--footer {
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+  color: black; }
+
+.footer__fuente {
+  font-size: 20px;
+  text-align: center; }
+
+.font__encabezado {
+  font-size: 50px; }
+
+.font__parrafo {
+  font-size: 30px; }
+
+.font__encabezado--fideos {
+  font-size: 50px; }
+
+.font__parrafo--fideos {
+  font-size: 30px; }
+
+.font__center {
+  text-align: center; }
+
+.font__left {
+  text-align: left; }
+
+.font__left--center {
+  text-align: left; }
+
+.font__zise--nosotros {
+  font-size: 40px; }
+
+.font__zise--parrafo {
+  font-size: 20px; }
+
+/*map-get*/
+.font_adrogue {
+  font-size: 40px; }
+
+.font__encabezado--fideos {
+  font-size: 50px; }
+
+.font__center {
+  font-size: center; }
+
+/* FORMULARIO/CONTACTO */
+.fuente__acceso {
+  color: #a3790e;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Jost', sans-serif;
+  text-transform: capitalize; }
+
+.ulContactos {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Jost', sans-serif;
+  list-style: none; }
+
+.sucursalContactos {
+  color: #534110;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Jost', sans-serif; }
+
+.selectorContactos {
+  color: white;
+  text-align: center; }
+
+/* SUCURSALES */
+/* vista mobile */
+@media only screen and (max-width: 767px) {
+  .footer__fuente {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    margin-bottom: 3px; }
+  .imgLogo {
+    width: 200px;
+    height: 200px; }
+  .logoSuperior {
+    width: 60px;
+    height: 30px; }
+  .fuente__google--contenido {
+    text-align: center; }
+  .font__left--center {
+    text-align: center; } }

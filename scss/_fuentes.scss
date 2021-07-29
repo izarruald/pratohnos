@@ -1,0 +1,83 @@
+.font__google{
+    font-family: 'Jost', sans-serif; font-weight: 600;
+}
+.fuente__google--contenido{
+    font-family: 'Jost', sans-serif; font-weight: 600;
+    text-align: left;
+    color: black;
+}
+.fuente__google--navbar{
+    font-family: 'Jost', sans-serif; font-weight: 600;
+    color: black;
+}
+.fuente__google--footer{
+    font-family: 'Jost', sans-serif; font-weight: 600;
+    color: black;
+}
+.footer__fuente {font-size: 20px;  text-align: center;}
+.font__encabezado{font-size: 50px; }
+.font__parrafo{font-size: 30px; }
+.font__encabezado--fideos{font-size: 50px;}
+.font__parrafo--fideos{font-size: 30px;}
+.font__center{text-align: center;}
+.font__left{text-align: left;}
+.font__left--center{text-align: left;}
+.font__zise--nosotros{font-size: 40px;}
+.font__zise--parrafo{font-size: 20px;}
+
+/*map-get*/
+$estilos: (
+  tFuente: 40px,
+  ttFuente:50px,
+  tttFuente:center
+);
+
+.font_adrogue{
+  font-size:map-get($estilos, tFuente);
+}
+.font__encabezado--fideos{
+    font-size:map-get($estilos, ttFuente);
+}
+.font__center{
+    font-size:map-get($estilos, tttFuente);
+}
+
+
+/* FORMULARIO/CONTACTO */
+.fuente__acceso {
+    color: rgb(163, 121, 14);
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    text-transform: capitalize;
+}
+
+.ulContactos {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    list-style: none;
+}
+.sucursalContactos {
+    color: rgb(83, 65, 16);
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+}
+.selectorContactos {
+    color: white;
+    text-align: center;
+}
+
+/* SUCURSALES */
+
+
+/* vista mobile */
+@media only screen and (max-width: 767px){
+    .footer__fuente{font-size: 15px; color: white; text-align: center; margin-bottom: 3px;}
+    .imgLogo {width: 200px; height: 200px;}
+    .logoSuperior {width: 60px; height: 30px;}
+    .fuente__google--contenido{text-align: center;}
+    .font__left--center{text-align: center;}
+}
