@@ -1,0 +1,7 @@
+Agregue
+- Titulo descriptivo a cada pagina 
+- ALT descriptiva a todas las imagenes
+- META NAME DESCRIPTION a todas las paginas 
+- META NAME KEYWORDS a todas las paginas
+- Solamente un H1 por pagina, luego distribuir el resto en H2, H3, etc..
+ 

@@ -13,6 +13,13 @@
 .color__blanco--instagram:hover {
   color: #992f6d; }
 
+.input:hover, .input__medio:hover {
+  background-color: white;
+  color: black; }
+
+.input__medio:hover {
+  color: black; }
+
 .entrevista__color {
   color: #a3790e; }
 
@@ -31,9 +38,53 @@
 .font__parrafo--fideos {
   color: black; }
 
+/* each */
+blue {
+  color: blue; }
+
+yellow {
+  color: yellow; }
+
+black {
+  color: black; }
+
+white {
+  color: white; }
+
 .container-fluid {
   padding-left: 0px;
   padding-right: 0px; }
+
+/* bucles */
+.col-1 {
+  width: 10%; }
+
+.col-2 {
+  width: 20%; }
+
+.col-3 {
+  width: 30%; }
+
+.col-4 {
+  width: 40%; }
+
+.col-5 {
+  width: 50%; }
+
+.col-6 {
+  width: 60%; }
+
+.col-7 {
+  width: 70%; }
+
+.col-8 {
+  width: 80%; }
+
+.col-9 {
+  width: 90%; }
+
+.col-10 {
+  width: 100%; }
 
 .row {
   display: flex; }
@@ -44,6 +95,37 @@
 .container-fluid {
   padding-left: 0px;
   padding-right: 0px; }
+
+/* bucles */
+.col-1 {
+  width: 10%; }
+
+.col-2 {
+  width: 20%; }
+
+.col-3 {
+  width: 30%; }
+
+.col-4 {
+  width: 40%; }
+
+.col-5 {
+  width: 50%; }
+
+.col-6 {
+  width: 60%; }
+
+.col-7 {
+  width: 70%; }
+
+.col-8 {
+  width: 80%; }
+
+.col-9 {
+  width: 90%; }
+
+.col-10 {
+  width: 100%; }
 
 .color__blanco {
   color: white; }
@@ -60,6 +142,13 @@
 .color__blanco--instagram:hover {
   color: #992f6d; }
 
+.input:hover, .input__medio:hover {
+  background-color: white;
+  color: black; }
+
+.input__medio:hover {
+  color: black; }
+
 .entrevista__color {
   color: #a3790e; }
 
@@ -77,6 +166,19 @@
 
 .font__parrafo--fideos {
   color: black; }
+
+/* each */
+blue {
+  color: blue; }
+
+yellow {
+  color: yellow; }
+
+black {
+  color: black; }
+
+white {
+  color: white; }
 
 .padding {
   padding-left: 0px;
@@ -129,6 +231,19 @@
   justify-content: center;
   align-items: center; }
 
+/* mixin */
+.boxMod__nosotros {
+  padding-top: 45px;
+  padding-bottom: 45px; }
+
+.boxMod__entrevista {
+  padding-top: 50px;
+  padding-bottom: 25px; }
+
+.padding__top--botton {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
 @media only screen and (min-width: 1024px) {
   .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end; } }
@@ -148,6 +263,13 @@
 .color__blanco--instagram:hover {
   color: #992f6d; }
 
+.input:hover, .input__medio:hover {
+  background-color: white;
+  color: black; }
+
+.input__medio:hover {
+  color: black; }
+
 .entrevista__color {
   color: #a3790e; }
 
@@ -166,6 +288,19 @@
 .font__parrafo--fideos {
   color: black; }
 
+/* each */
+blue {
+  color: blue; }
+
+yellow {
+  color: yellow; }
+
+black {
+  color: black; }
+
+white {
+  color: white; }
+
 .fondo {
   background-color: #d1af59;
   width: 100%; }
@@ -181,6 +316,14 @@
 
 .background__gold {
   background-color: #d1af59; }
+
+/* extend */
+.input, .input__medio {
+  background-color: black;
+  color: #a3790e; }
+
+.input__medio {
+  color: white; }
 
 .font__google {
   font-family: 'Jost', sans-serif;

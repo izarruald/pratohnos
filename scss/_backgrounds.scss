@@ -4,3 +4,6 @@
 .footer__background {background-color: rgb(0, 54, 20); }
 .background__verde{background-color: rgb(0, 54, 20);}
 .background__gold{background-color: rgb(209, 175, 89);}
+/* extend */
+.input{background-color: black; color: $gold;}
+.input__medio{ @extend .input; color: $blanco;}

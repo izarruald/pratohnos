@@ -13,6 +13,15 @@
 .boxMod__entrevista{padding-top: 50px; padding-bottom: 25px;}
 .boxMod__border{ border-style: solid;}
 .boxMod__centrar--elemento {display: flex; justify-content: center; align-items: center;}
+/* mixin */
+@mixin paddingTB ($paddingT, $paddingB){
+    padding-top: $paddingT;
+    padding-bottom: $paddingB;
+}
+
+.boxMod__nosotros{ @include paddingTB (45px,45px)}
+.boxMod__entrevista { @include paddingTB (50px,25px)}
+.padding__top--botton { @include paddingTB (50px,50px)}
 
 @media only screen and (min-width: 1024px){
     .navbar-expand-lg .navbar-collapse{justify-content: flex-end;}
