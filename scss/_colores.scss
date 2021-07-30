@@ -17,14 +17,10 @@ $gold: rgb(163, 121, 14);
 .input__medio:hover {color: $negro;}
 .entrevista__color{color: $gold;}
 .footer__fuente {color: $blanco;}
-.font__encabezado{color: $blanco;}
-.font__parrafo{color: $blanco;}
-.font__encabezado--fideos{ color: $negro;}
-.font__parrafo--fideos{ color: $negro;}
 
 /* each */
-@each $color in blue, yellow, black, $blanco{
-	#{$color}{
+@each $color in blue, yellow, black, white{
+	.#{$color}{
 	color:#{$color};
 	}
 }
