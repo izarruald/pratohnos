@@ -7,7 +7,7 @@ $h1Mobile:40px;
 
 /* bucles */
 @for $i from 1 through 10 {
-	.fuente__tamanio#{$i}{
+	.fontTamanio#{$i}{
 	font-size:10px * $i;
 	}
 }

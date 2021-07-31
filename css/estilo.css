@@ -1,23 +1,26 @@
-.color__blanco {
+.colorBlanco {
+  color: white; }
+
+.redes__color--blanco {
   color: white; }
 
 .color__gold {
   color: #a3790e; }
 
-.color__blanco--twitter:hover {
+.redes__color--twitter:hover {
   color: #41aaeb; }
 
-.color__blanco--facebook:hover {
+.redes__color--facebook:hover {
   color: #181877; }
 
-.color__blanco--instagram:hover {
+.redes__color--instagram:hover {
   color: #992f6d; }
 
-.input:hover, .input__medio:hover {
+.formulario__input:hover, .formulario__input--medio:hover {
   background-color: white;
   color: black; }
 
-.input__medio:hover {
+.formulario__input--medio:hover {
   color: black; }
 
 .entrevista__color {
@@ -44,34 +47,34 @@
   padding-right: 0px; }
 
 /* bucles */
-.fuente__tamanio1 {
+.fontTamanio1 {
   font-size: 10px; }
 
-.fuente__tamanio2 {
+.fontTamanio2 {
   font-size: 20px; }
 
-.fuente__tamanio3 {
+.fontTamanio3 {
   font-size: 30px; }
 
-.fuente__tamanio4 {
+.fontTamanio4 {
   font-size: 40px; }
 
-.fuente__tamanio5 {
+.fontTamanio5 {
   font-size: 50px; }
 
-.fuente__tamanio6 {
+.fontTamanio6 {
   font-size: 60px; }
 
-.fuente__tamanio7 {
+.fontTamanio7 {
   font-size: 70px; }
 
-.fuente__tamanio8 {
+.fontTamanio8 {
   font-size: 80px; }
 
-.fuente__tamanio9 {
+.fontTamanio9 {
   font-size: 90px; }
 
-.fuente__tamanio10 {
+.fontTamanio10 {
   font-size: 100px; }
 
 .row {
@@ -85,56 +88,59 @@
   padding-right: 0px; }
 
 /* bucles */
-.fuente__tamanio1 {
+.fontTamanio1 {
   font-size: 10px; }
 
-.fuente__tamanio2 {
+.fontTamanio2 {
   font-size: 20px; }
 
-.fuente__tamanio3 {
+.fontTamanio3 {
   font-size: 30px; }
 
-.fuente__tamanio4 {
+.fontTamanio4 {
   font-size: 40px; }
 
-.fuente__tamanio5 {
+.fontTamanio5 {
   font-size: 50px; }
 
-.fuente__tamanio6 {
+.fontTamanio6 {
   font-size: 60px; }
 
-.fuente__tamanio7 {
+.fontTamanio7 {
   font-size: 70px; }
 
-.fuente__tamanio8 {
+.fontTamanio8 {
   font-size: 80px; }
 
-.fuente__tamanio9 {
+.fontTamanio9 {
   font-size: 90px; }
 
-.fuente__tamanio10 {
+.fontTamanio10 {
   font-size: 100px; }
 
-.color__blanco {
+.colorBlanco {
+  color: white; }
+
+.redes__color--blanco {
   color: white; }
 
 .color__gold {
   color: #a3790e; }
 
-.color__blanco--twitter:hover {
+.redes__color--twitter:hover {
   color: #41aaeb; }
 
-.color__blanco--facebook:hover {
+.redes__color--facebook:hover {
   color: #181877; }
 
-.color__blanco--instagram:hover {
+.redes__color--instagram:hover {
   color: #992f6d; }
 
-.input:hover, .input__medio:hover {
+.formulario__input:hover, .formulario__input--medio:hover {
   background-color: white;
   color: black; }
 
-.input__medio:hover {
+.formulario__input--medio:hover {
   color: black; }
 
 .entrevista__color {
@@ -156,25 +162,28 @@
 .white {
   color: white; }
 
+/* camelCase */
 .padding {
   padding-left: 0px;
   padding-right: 0px; }
 
-.padding__top {
+.paddingT {
   padding-top: 40px; }
 
-.padding__botton {
-  padding-bottom: 40px; }
-
-.padding__top--botton {
+.paddingTB {
   padding-top: 50px;
   padding-bottom: 50px; }
 
-.padding__redes {
+/* editados de BEM */
+.redes__padding {
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 15px;
   text-decoration: none; }
+
+/* sin camelCase */
+.padding__botton {
+  padding-bottom: 40px; }
 
 .row {
   margin-right: 0px;
@@ -186,9 +195,9 @@
 .footer__margin {
   margin-bottom: 3px; }
 
-.boxMod__contactos {
+.formulario__boxmod {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-content: center; }
 
 .boxMod__nosotros {
@@ -224,26 +233,29 @@
   .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end; } }
 
-.color__blanco {
+.colorBlanco {
+  color: white; }
+
+.redes__color--blanco {
   color: white; }
 
 .color__gold {
   color: #a3790e; }
 
-.color__blanco--twitter:hover {
+.redes__color--twitter:hover {
   color: #41aaeb; }
 
-.color__blanco--facebook:hover {
+.redes__color--facebook:hover {
   color: #181877; }
 
-.color__blanco--instagram:hover {
+.redes__color--instagram:hover {
   color: #992f6d; }
 
-.input:hover, .input__medio:hover {
+.formulario__input:hover, .formulario__input--medio:hover {
   background-color: white;
   color: black; }
 
-.input__medio:hover {
+.formulario__input--medio:hover {
   color: black; }
 
 .entrevista__color {
@@ -272,26 +284,27 @@
 .contenido__background {
   background-color: #003614; }
 
-.footer__background {
-  background-color: #003614; }
-
-.background__verde {
+.backgroundVerde {
   background-color: #003614; }
 
 .background__gold {
   background-color: #d1af59; }
 
 /* extend */
-.input, .input__medio {
+.formulario__input, .formulario__input--medio {
   background-color: black;
   color: #a3790e; }
 
-.input__medio {
+.formulario__input--medio {
   color: white; }
 
-.font__google {
+/* predeterminadas */
+.fontGoogle {
   font-family: 'Jost', sans-serif;
   font-weight: 600; }
+
+.fontGold {
+  color: #a3790e; }
 
 .fuente__google--contenido {
   font-family: 'Jost', sans-serif;
@@ -299,12 +312,7 @@
   text-align: left;
   color: black; }
 
-.fuente__google--navbar {
-  font-family: 'Jost', sans-serif;
-  font-weight: 600;
-  color: black; }
-
-.fuente__google--footer {
+.font__google--black {
   font-family: 'Jost', sans-serif;
   font-weight: 600;
   color: black; }
@@ -331,9 +339,6 @@
 .font__left {
   text-align: left; }
 
-.font__left--center {
-  text-align: left; }
-
 .font__zise--nosotros {
   font-size: 40px; }
 
@@ -347,32 +352,16 @@
 .font__encabezado--fideos {
   font-size: 50px; }
 
-.font__center {
-  font-size: center; }
+.fontCenter {
+  text-align: center; }
 
 /* FORMULARIO/CONTACTO */
 .fuente__acceso {
   color: #a3790e;
-  text-align: center;
-  font-family: 'Jost', sans-serif;
-  text-transform: capitalize; }
-
-.ulContactos {
-  color: white;
-  font-size: 20px;
-  text-align: center;
-  font-family: 'Jost', sans-serif;
-  list-style: none; }
-
-.sucursalContactos {
-  color: #534110;
-  font-size: 20px;
-  text-align: center;
-  font-family: 'Jost', sans-serif; }
-
-.selectorContactos {
-  color: white;
   text-align: center; }
+
+.styleOut {
+  list-style: none; }
 
 /* SUCURSALES */
 /* vista mobile */
@@ -389,6 +378,4 @@
     width: 60px;
     height: 30px; }
   .fuente__google--contenido {
-    text-align: center; }
-  .font__left--center {
     text-align: center; } }
