@@ -3,32 +3,27 @@
 /* camelCase */
 .padding {padding-left: 0px; padding-right: 0px;}
 .paddingT {padding-top: 40px;}
+.paddingB {padding-bottom: 40px;}
 .paddingTB {padding-top: 50px;padding-bottom: 50px;}
 
 
 /* editados de BEM */
 .redes__padding{padding-left: 5px; padding-right: 5px; padding-bottom: 15px; text-decoration: none;}
-
-/* sin camelCase */
-
-.padding__botton{padding-bottom: 40px;}
+.nosotros__border{ border-style: solid;}
 .row {margin-right: 0px; margin-left: 0px;}
 .d-flex {justify-content: center;}
 .footer__margin{margin-bottom: 3px;}
 .formulario__boxmod{display: flex; justify-content: space-around; align-content: center;}
-.boxMod__nosotros{padding-top: 45px; padding-bottom: 45px;}
-.boxMod__entrevista{padding-top: 50px; padding-bottom: 25px;}
-.boxMod__border{ border-style: solid;}
 .boxMod__centrar--elemento {display: flex; justify-content: center; align-items: center;}
+
 /* mixin */
-@mixin paddingTB ($paddingT, $paddingB){
+/* @mixin paddingTB ($paddingT, $paddingB){
     padding-top: $paddingT;
     padding-bottom: $paddingB;
 }
-
 .boxMod__nosotros{ @include paddingTB (45px,45px)}
 .boxMod__entrevista { @include paddingTB (50px,25px)}
-.padding__top--botton { @include paddingTB (50px,50px)}
+.padding__top--botton { @include paddingTB (50px,50px)} */
 
 @media only screen and (min-width: 1024px){
     .navbar-expand-lg .navbar-collapse{justify-content: flex-end;}

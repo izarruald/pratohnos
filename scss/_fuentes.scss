@@ -13,6 +13,12 @@
     font-family: 'Jost', sans-serif; font-weight: 600;
     color: black;
 }
+/* bucles */
+@for $i from 1 through 10 {
+	.fontTamanio#{$i}{
+	font-size:10px * $i;
+	}
+}
 
 .footer__fuente {font-size: 20px;  text-align: center;}
 .font__encabezado{font-size: 50px; }
@@ -21,8 +27,7 @@
 .font__parrafo--fideos{font-size: 30px;}
 .font__center{text-align: center;}
 .font__left{text-align: left;}
-.font__zise--nosotros{font-size: 40px;}
-.font__zise--parrafo{font-size: 20px;}
+
 
 /*map-get*/
 $estilos: (
