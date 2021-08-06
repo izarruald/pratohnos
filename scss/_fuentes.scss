@@ -55,13 +55,15 @@ $estilos: (
 }
 
 
-/* SUCURSALES */
-
-
 /* vista mobile */
 @media only screen and (max-width: 767px){
     .footer__fuente{font-size: 15px; color: white; text-align: center; margin-bottom: 3px;}
     .imgLogo {width: 200px; height: 200px;}
-    .logoSuperior {width: 60px; height: 30px;}
     .fuente__google--contenido{text-align: center;}
+    .empanadas__titulo--mobile{font-size: 50px; text-align: center}
+    .empanadas__parrafo--mobile{font-size: 25px; text-align: center;}
+    .boxmodCentrarMobile {display: flex; justify-content: center; align-items: center;}
+    .fontMobileTitulo{font-size: 40px;}
+    .fontMobileParrafo{font-size: 20px;}
+    .footer__fuente {font-size: 18px;  text-align: center;}
 }

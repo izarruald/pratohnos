@@ -14,7 +14,7 @@
 .d-flex {justify-content: center;}
 .footer__margin{margin-bottom: 3px;}
 .formulario__boxmod{display: flex; justify-content: space-around; align-content: center;}
-.boxMod__centrar--elemento {display: flex; justify-content: center; align-items: center;}
+.boxmodCentrar {display: flex; justify-content: center; align-items: center;}
 
 /* mixin */
 /* @mixin paddingTB ($paddingT, $paddingB){
@@ -28,3 +28,8 @@
 @media only screen and (min-width: 1024px){
     .navbar-expand-lg .navbar-collapse{justify-content: flex-end;}
     }
+
+
+@media only screen and (max-width: 767px) {
+    .paddingTBmobile {padding-top: 40px;padding-bottom: 20px;}
+}

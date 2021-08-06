@@ -1,3 +1,11 @@
 .container-fluid{padding-left: 0px;padding-right: 0px;}
+.contenido__img {width: 500px; height: 400px;}
+.tamanioDesktop {width: 100px; height: 50px;}
 
-
+@media only screen and (max-width: 767px){
+    .contenido__img{width: 400px; height: 300px;}
+    .logoSuperior {width: 100px; height: 50px;}
+    .tamanioTitulo{font-size: 50px;}
+    .tamanioParrafo{font-size: 25px;}
+    .tamanioResto{font-size: 20px;}
+}
