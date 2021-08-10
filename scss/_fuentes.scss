@@ -3,6 +3,7 @@
     font-family: 'Jost', sans-serif; font-weight: 600;
 }
 .fontGold{color: rgb(163, 121, 14)}
+.capitalize {text-transform: capitalize;}
 
 .fuente__google--contenido{
     font-family: 'Jost', sans-serif; font-weight: 600;
@@ -61,7 +62,7 @@ $estilos: (
     .imgLogo {width: 200px; height: 200px;}
     .fuente__google--contenido{text-align: center;}
     .empanadas__titulo--mobile{font-size: 50px; text-align: center}
-    .empanadas__parrafo--mobile{font-size: 25px; text-align: center;}
+    .empanadas__parrafo--mobile{font-size: 25px; text-align: left;}
     .boxmodCentrarMobile {display: flex; justify-content: center; align-items: center;}
     .fontMobileTitulo{font-size: 40px;}
     .fontMobileParrafo{font-size: 20px;}

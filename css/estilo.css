@@ -269,6 +269,12 @@
 .backgroundGold {
   background-color: #d1af59; }
 
+.borderBlanco {
+  border: 5px solid white; }
+
+.borderNegro {
+  border: 5px solid black; }
+
 /* extend */
 .formulario__input, .formulario__input--medio {
   background-color: black;
@@ -284,6 +290,9 @@
 
 .fontGold {
   color: #a3790e; }
+
+.capitalize {
+  text-transform: capitalize; }
 
 .fuente__google--contenido {
   font-family: 'Jost', sans-serif;
@@ -384,7 +393,7 @@
     text-align: center; }
   .empanadas__parrafo--mobile {
     font-size: 25px;
-    text-align: center; }
+    text-align: left; }
   .boxmodCentrarMobile {
     display: flex;
     justify-content: center;
