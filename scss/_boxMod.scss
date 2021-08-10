@@ -15,7 +15,7 @@
 .footer__margin{margin-bottom: 3px;}
 .formulario__boxmod{display: flex; justify-content: space-around; align-content: center;}
 .boxmodCentrar {display: flex; justify-content: center; align-items: center;}
-
+.carousel-inner {width: 100%; height: 400px;}
 /* mixin */
 /* @mixin paddingTB ($paddingT, $paddingB){
     padding-top: $paddingT;
