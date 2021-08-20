@@ -13,7 +13,49 @@
 .row {margin-right: 0px; margin-left: 0px;}
 .d-flex {justify-content: center;}
 .footer__margin{margin-bottom: 3px;}
-.formulario__boxmod{display: flex; justify-content: space-around; align-content: center;}
+
+/* Formulario */
+
+.formulario__boxmod{
+    width: 700px;
+    background-color: rgb(0, 54, 20);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    box-shadow: 7px 13px 37px #000;
+}
+.formulario__boxmod h4 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.formulario__boxmod p {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+.formulario__input {
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(209, 175, 89);
+    font-size: 18px;
+}
+.botons {
+    width: 100%;
+    background: #1f53;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
 .boxmodCentrar {display: flex; justify-content: center; align-items: center;}
 .carousel-inner {width: 100%; height: 700px;}
 /* mixin */
@@ -32,4 +74,7 @@
 
 @media only screen and (max-width: 767px) {
     .paddingTBmobile {padding-top: 40px;padding-bottom: 20px;}
+    .formulario__boxmod{
+        width: 400px;
+    }
 }
