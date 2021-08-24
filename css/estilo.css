@@ -54,6 +54,10 @@
   width: 100px;
   height: 50px; }
 
+.carousel-inner {
+  width: 100%;
+  height: 700px; }
+
 @media only screen and (max-width: 767px) {
   .padFiambre {
     padding-top: 50px; }
@@ -69,7 +73,10 @@
   .tamanioParrafo {
     font-size: 25px; }
   .tamanioResto {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .carousel-inner {
+    width: 100%;
+    height: 230px; } }
 
 .row {
   display: flex; }
@@ -89,6 +96,10 @@
   width: 100px;
   height: 50px; }
 
+.carousel-inner {
+  width: 100%;
+  height: 700px; }
+
 @media only screen and (max-width: 767px) {
   .padFiambre {
     padding-top: 50px; }
@@ -104,7 +115,10 @@
   .tamanioParrafo {
     font-size: 25px; }
   .tamanioResto {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .carousel-inner {
+    width: 100%;
+    height: 230px; } }
 
 .colorBlanco {
   color: white; }
@@ -231,10 +245,6 @@
   justify-content: center;
   align-items: center; }
 
-.carousel-inner {
-  width: 100%;
-  height: 700px; }
-
 /* mixin */
 /* @mixin paddingTB ($paddingT, $paddingB){
     padding-top: $paddingT;
@@ -253,6 +263,11 @@
     padding-bottom: 20px; }
   .formulario__boxmod {
     width: 400px; } }
+
+/* formulario */
+.formulario__boxmod {
+  border-bottom: 5px solid #a3790e;
+  border-top: 5px solid #a3790e; }
 
 .colorBlanco {
   color: white; }
