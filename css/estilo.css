@@ -56,7 +56,7 @@
 
 .carousel-inner {
   width: 100%;
-  height: 700px; }
+  height: 100%; }
 
 @media only screen and (max-width: 767px) {
   .padFiambre {
@@ -73,10 +73,7 @@
   .tamanioParrafo {
     font-size: 25px; }
   .tamanioResto {
-    font-size: 20px; }
-  .carousel-inner {
-    width: 100%;
-    height: 230px; } }
+    font-size: 20px; } }
 
 .row {
   display: flex; }
@@ -98,7 +95,7 @@
 
 .carousel-inner {
   width: 100%;
-  height: 700px; }
+  height: 100%; }
 
 @media only screen and (max-width: 767px) {
   .padFiambre {
@@ -115,10 +112,7 @@
   .tamanioParrafo {
     font-size: 25px; }
   .tamanioResto {
-    font-size: 20px; }
-  .carousel-inner {
-    width: 100%;
-    height: 230px; } }
+    font-size: 20px; } }
 
 .colorBlanco {
   color: white; }
@@ -357,11 +351,6 @@
   text-align: left;
   color: black; }
 
-.font__google--black {
-  font-family: 'Jost', sans-serif;
-  font-weight: 600;
-  color: black; }
-
 /* bucles */
 .fontTamanio1 {
   font-size: 10px; }
@@ -415,6 +404,9 @@
 .font__left {
   text-align: left; }
 
+.portada__titulo {
+  font-weight: 900; }
+
 /*map-get*/
 .font_adrogue {
   font-size: 40px; }
@@ -465,7 +457,7 @@
   .fontMobileTitulo {
     font-size: 40px; }
   .fontMobileParrafo {
-    font-size: 20px; }
+    font-size: 16px; }
   .footer__fuente {
     font-size: 18px;
     text-align: center; } }

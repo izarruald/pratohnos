@@ -1,17 +1,10 @@
 /* predeterminadas */
-.fontGoogle{
-    font-family: 'Jost', sans-serif; font-weight: 600;
-}
-.fontGold{color: rgb(163, 121, 14)}
+.fontGoogle {font-family: 'Jost', sans-serif; font-weight: 600;}
+.fontGold {color: rgb(163, 121, 14)}
 .capitalize {text-transform: capitalize;}
-
 .fuente__google--contenido{
     font-family: 'Jost', sans-serif; font-weight: 600;
     text-align: left;
-    color: black;
-}
-.font__google--black{
-    font-family: 'Jost', sans-serif; font-weight: 600;
     color: black;
 }
 /* bucles */
@@ -28,8 +21,7 @@
 .font__parrafo--fideos{font-size: 30px;}
 .font__center{text-align: center;}
 .font__left{text-align: left;}
-
-
+.portada__titulo {font-weight: 900;}
 /*map-get*/
 $estilos: (
   tFuente: 40px,
@@ -63,6 +55,6 @@ $estilos: (
     .empanadas__parrafo--mobile{font-size: 25px; text-align: left;}
     .boxmodCentrarMobile {display: flex; justify-content: center; align-items: center;}
     .fontMobileTitulo{font-size: 40px;}
-    .fontMobileParrafo{font-size: 20px;}
+    .fontMobileParrafo{font-size: 16px;}
     .footer__fuente {font-size: 18px;  text-align: center;}
 }
