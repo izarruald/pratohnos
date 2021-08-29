@@ -2,7 +2,10 @@
   color: white; }
 
 .redes__color--blanco {
-  color: white; }
+  color: #a3790e; }
+
+.redes__color--verde {
+  color: #003614; }
 
 .color__gold {
   color: #a3790e; }
@@ -62,6 +65,10 @@
   width: 100%;
   height: 100%; }
 
+.footer__img {
+  width: 100px;
+  height: 50px; }
+
 @media only screen and (max-width: 767px) {
   .padFiambre {
     padding-top: 50px; }
@@ -105,6 +112,10 @@
   width: 100%;
   height: 100%; }
 
+.footer__img {
+  width: 100px;
+  height: 50px; }
+
 @media only screen and (max-width: 767px) {
   .padFiambre {
     padding-top: 50px; }
@@ -126,7 +137,10 @@
   color: white; }
 
 .redes__color--blanco {
-  color: white; }
+  color: #a3790e; }
+
+.redes__color--verde {
+  color: #003614; }
 
 .color__gold {
   color: #a3790e; }
@@ -183,13 +197,13 @@
 
 /* editados de BEM */
 .redes__padding {
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
   padding-bottom: 15px;
   text-decoration: none; }
 
-.nosotros__border {
-  border-style: solid; }
+.nosotros {
+  padding-bottom: 60px; }
 
 .row {
   margin-right: 0px;
@@ -201,60 +215,21 @@
 .footer__margin {
   margin-bottom: 3px; }
 
-/* Formulario */
-.formulario__boxmod {
-  width: 700px;
-  background-color: #003614;
-  padding: 30px;
-  margin: auto;
-  margin-top: 100px;
-  border-radius: 4px;
-  box-shadow: 7px 13px 37px #000; }
-
-.formulario__boxmod h4 {
-  font-size: 25px;
-  margin-bottom: 20px;
-  color: white;
-  text-align: center;
-  padding-bottom: 20px; }
-
-.formulario__boxmod p {
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding-top: 10px; }
-
-.formulario__input, .formulario__input--medio {
-  width: 100%;
-  background-color: black;
-  padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  border: 1px solid #d1af59;
-  font-size: 18px; }
-
-.botons {
-  width: 100%;
-  background: #1f53;
-  border: none;
-  padding: 12px;
-  color: white;
-  margin: 16px 0;
-  font-size: 16px; }
-
 .boxmodCentrar {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-/* mixin */
-/* @mixin paddingTB ($paddingT, $paddingB){
-    padding-top: $paddingT;
-    padding-bottom: $paddingB;
-}
-.boxMod__nosotros{ @include paddingTB (45px,45px)}
-.boxMod__entrevista { @include paddingTB (50px,25px)}
-.padding__top--botton { @include paddingTB (50px,50px)} */
+.footer__telefono {
+  padding-top: 75px; }
+
+.footer__seguinos {
+  padding-top: 25px; }
+
+.footer__paddingTB {
+  padding-top: 40px;
+  padding-bottom: 20px; }
+
 @media only screen and (min-width: 1024px) {
   .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end; } }
@@ -264,18 +239,23 @@
     padding-top: 40px;
     padding-bottom: 20px; }
   .formulario__boxmod {
-    width: 350px; } }
-
-/* formulario */
-.formulario__boxmod {
-  border-bottom: 5px solid #a3790e;
-  border-top: 5px solid #a3790e; }
+    width: 350px; }
+  .footer__img--mobile {
+    padding-top: 25px;
+    padding-bottom: 25px; }
+  .paddingTmobile {
+    padding-top: 0px; }
+  .footer__telefono {
+    padding-top: 30px; } }
 
 .colorBlanco {
   color: white; }
 
 .redes__color--blanco {
-  color: white; }
+  color: #a3790e; }
+
+.redes__color--verde {
+  color: #003614; }
 
 .color__gold {
   color: #a3790e; }
@@ -349,6 +329,9 @@
 
 .fontGold {
   color: #a3790e; }
+
+.fontVerde {
+  color: #003614; }
 
 .capitalize {
   text-transform: capitalize; }
@@ -444,7 +427,6 @@
 @media only screen and (max-width: 767px) {
   .footer__fuente {
     font-size: 15px;
-    color: white;
     text-align: center;
     margin-bottom: 3px; }
   .imgLogo {
@@ -469,3 +451,47 @@
   .footer__fuente {
     font-size: 18px;
     text-align: center; } }
+
+/* Formulario */
+.formulario__boxmod {
+  width: 90%;
+  background-color: #003614;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  box-shadow: 7px 13px 37px #000; }
+
+.formulario__boxmod h4 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  padding-bottom: 20px; }
+
+.formulario__boxmod p {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding-top: 10px; }
+
+.formulario__input, .formulario__input--medio {
+  width: 100%;
+  background-color: black;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #d1af59;
+  font-size: 18px; }
+
+.botons {
+  width: 100%;
+  background: #1f53;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px; }
+
+.horarios {
+  padding-bottom: 50px; }

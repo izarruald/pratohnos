@@ -1,0 +1,43 @@
+/* Formulario */
+
+.formulario__boxmod{
+    width: 90%;
+    background-color: rgb(0, 54, 20);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    box-shadow: 7px 13px 37px #000;
+}
+.formulario__boxmod h4 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.formulario__boxmod p {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+.formulario__input {
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(209, 175, 89);
+    font-size: 18px;
+}
+.botons {
+    width: 100%;
+    background: #1f53;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+.horarios{padding-bottom: 50px;}  
