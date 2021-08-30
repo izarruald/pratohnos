@@ -454,7 +454,7 @@
 
 /* Formulario */
 .formulario__boxmod {
-  width: 90%;
+  width: 800px;
   background-color: #003614;
   padding: 30px;
   margin: auto;
@@ -495,3 +495,7 @@
 
 .horarios {
   padding-bottom: 50px; }
+
+@media only screen and (max-width: 767px) {
+  .formulario__boxmod {
+    width: 90%; } }
