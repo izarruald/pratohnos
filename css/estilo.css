@@ -556,6 +556,13 @@ body {
   max-width: 100%;
   display: block; }
 
+.fiambres {
+  height: 42%; }
+
+.vinos {
+  height: 30%;
+  width: 100%; }
+
 .outStyle {
   list-style: none; }
 
