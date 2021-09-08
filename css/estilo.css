@@ -1,14 +1,14 @@
 .colorBlanco {
   color: white; }
 
+.color__gold {
+  color: #a3790e; }
+
 .redes__color--blanco {
   color: #a3790e; }
 
 .redes__color--verde {
   color: #003614; }
-
-.color__gold {
-  color: #a3790e; }
 
 .verde {
   color: #003614; }
@@ -136,14 +136,14 @@
 .colorBlanco {
   color: white; }
 
+.color__gold {
+  color: #a3790e; }
+
 .redes__color--blanco {
   color: #a3790e; }
 
 .redes__color--verde {
   color: #003614; }
-
-.color__gold {
-  color: #a3790e; }
 
 .verde {
   color: #003614; }
@@ -251,14 +251,14 @@
 .colorBlanco {
   color: white; }
 
+.color__gold {
+  color: #a3790e; }
+
 .redes__color--blanco {
   color: #a3790e; }
 
 .redes__color--verde {
   color: #003614; }
-
-.color__gold {
-  color: #a3790e; }
 
 .verde {
   color: #003614; }
@@ -335,6 +335,9 @@
 
 .capitalize {
   text-transform: capitalize; }
+
+.CentrarTxt {
+  text-align: center; }
 
 .fuente__google--contenido {
   font-family: 'Jost', sans-serif;
@@ -555,13 +558,6 @@ body {
 .item-img {
   max-width: 100%;
   display: block; }
-
-.fiambres {
-  height: 42%; }
-
-.vinos {
-  height: 30%;
-  width: 100%; }
 
 .outStyle {
   list-style: none; }
