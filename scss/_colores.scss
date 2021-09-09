@@ -6,22 +6,44 @@ $blanco:white;
 $violeta:violet;
 $verde:rgb(0, 54, 20);
 $gold: rgb(163, 121, 14);
-
+.colorNegro {color: black;}
 .colorBlanco{color: white;}
 .color__gold{color: $gold;}
+.colorFondo {color: rgb(209, 175, 89);}
 .redes__color--blanco{color: $gold;}
 .redes__color--verde{color: $verde;}
 .verde{color:rgb(0, 54, 20);}
+.linkG:hover {color: rgb(163, 121, 14); text-decoration: none;}
+.linkW:hover {color: white; text-decoration: none;}
+.linkV:hover {color: rgb(0, 54, 20); text-decoration: none;}
 .redes__color--twitter:hover{color: rgb(65, 170, 235);}
 .redes__color--facebook:hover{color: rgb(24, 24, 119);}
 .redes__color--instagram:hover{color: rgb(153, 47, 109);}
 .formulario__input:hover {background-color: $blanco; color: $negro;}
 .entrevista__color{color: $gold;}
 .footer__fuente {color: $blanco;}
+.navbar__color {color: $gold;}
+.navbar-light .navbar-nav .nav-link {
+    color: $gold;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: white;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color:$blanco
+}
+.navbar-toggler{background-color: $blanco;}
 
 /* each */
 @each $color in blue, yellow, black, white{
 	.#{$color}{
 	color:#{$color};
 	}
+}
+
+/* vista mobile */
+@media only screen and (max-width: 767px){
+    .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+        color:$blanco;
+    }
 }

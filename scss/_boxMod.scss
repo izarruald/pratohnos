@@ -5,7 +5,8 @@
 .paddingT {padding-top: 40px;}
 .paddingB {padding-bottom: 40px;}
 .paddingTB {padding-top: 50px;padding-bottom: 50px;}
-
+.marginB {margin-bottom: 5px;}
+.marginBB {margin-bottom: 18px;}
 
 /* editados de BEM */
 .redes__padding{padding-left: 8px; padding-right: 8px; padding-bottom: 15px; text-decoration: none;}
@@ -16,7 +17,7 @@
 .boxmodCentrar {display: flex; justify-content: center; align-items: center;}
 .footer__telefono {padding-top: 75px;}
 .footer__seguinos {padding-top: 25px;}
-.footer__paddingTB {padding-top: 40px;padding-bottom: 20px;}
+.footer__paddingTB {padding-top: 40px;padding-bottom: 10px;}
 
 @media only screen and (min-width: 1024px){
     .navbar-expand-lg .navbar-collapse{justify-content: flex-end;}

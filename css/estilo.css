@@ -1,8 +1,15 @@
+@charset "UTF-8";
+.colorNegro {
+  color: black; }
+
 .colorBlanco {
   color: white; }
 
 .color__gold {
   color: #a3790e; }
+
+.colorFondo {
+  color: #d1af59; }
 
 .redes__color--blanco {
   color: #a3790e; }
@@ -12,6 +19,18 @@
 
 .verde {
   color: #003614; }
+
+.linkG:hover {
+  color: #a3790e;
+  text-decoration: none; }
+
+.linkW:hover {
+  color: white;
+  text-decoration: none; }
+
+.linkV:hover {
+  color: #003614;
+  text-decoration: none; }
 
 .redes__color--twitter:hover {
   color: #41aaeb; }
@@ -32,6 +51,21 @@
 .footer__fuente {
   color: white; }
 
+.navbar__color {
+  color: #a3790e; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #a3790e; }
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: white; }
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: white; }
+
+.navbar-toggler {
+  background-color: white; }
+
 /* each */
 .blue {
   color: blue; }
@@ -44,6 +78,11 @@
 
 .white {
   color: white; }
+
+/* vista mobile */
+@media only screen and (max-width: 767px) {
+  .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: white; } }
 
 .container-fluid {
   padding-left: 0px;
@@ -69,6 +108,10 @@
   width: 100px;
   height: 50px; }
 
+.img-slider {
+  width: 200px;
+  height: 200px; }
+
 @media only screen and (max-width: 767px) {
   .padFiambre {
     padding-top: 50px; }
@@ -84,7 +127,9 @@
   .tamanioParrafo {
     font-size: 25px; }
   .tamanioResto {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .iframe {
+    height: 250px; } }
 
 .row {
   display: flex; }
@@ -116,6 +161,10 @@
   width: 100px;
   height: 50px; }
 
+.img-slider {
+  width: 200px;
+  height: 200px; }
+
 @media only screen and (max-width: 767px) {
   .padFiambre {
     padding-top: 50px; }
@@ -131,13 +180,21 @@
   .tamanioParrafo {
     font-size: 25px; }
   .tamanioResto {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .iframe {
+    height: 250px; } }
+
+.colorNegro {
+  color: black; }
 
 .colorBlanco {
   color: white; }
 
 .color__gold {
   color: #a3790e; }
+
+.colorFondo {
+  color: #d1af59; }
 
 .redes__color--blanco {
   color: #a3790e; }
@@ -147,6 +204,18 @@
 
 .verde {
   color: #003614; }
+
+.linkG:hover {
+  color: #a3790e;
+  text-decoration: none; }
+
+.linkW:hover {
+  color: white;
+  text-decoration: none; }
+
+.linkV:hover {
+  color: #003614;
+  text-decoration: none; }
 
 .redes__color--twitter:hover {
   color: #41aaeb; }
@@ -167,6 +236,21 @@
 .footer__fuente {
   color: white; }
 
+.navbar__color {
+  color: #a3790e; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #a3790e; }
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: white; }
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: white; }
+
+.navbar-toggler {
+  background-color: white; }
+
 /* each */
 .blue {
   color: blue; }
@@ -179,6 +263,11 @@
 
 .white {
   color: white; }
+
+/* vista mobile */
+@media only screen and (max-width: 767px) {
+  .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: white; } }
 
 /* camelCase */
 .padding {
@@ -194,6 +283,12 @@
 .paddingTB {
   padding-top: 50px;
   padding-bottom: 50px; }
+
+.marginB {
+  margin-bottom: 5px; }
+
+.marginBB {
+  margin-bottom: 18px; }
 
 /* editados de BEM */
 .redes__padding {
@@ -228,7 +323,7 @@
 
 .footer__paddingTB {
   padding-top: 40px;
-  padding-bottom: 20px; }
+  padding-bottom: 10px; }
 
 @media only screen and (min-width: 1024px) {
   .navbar-expand-lg .navbar-collapse {
@@ -248,11 +343,17 @@
   .footer__telefono {
     padding-top: 30px; } }
 
+.colorNegro {
+  color: black; }
+
 .colorBlanco {
   color: white; }
 
 .color__gold {
   color: #a3790e; }
+
+.colorFondo {
+  color: #d1af59; }
 
 .redes__color--blanco {
   color: #a3790e; }
@@ -262,6 +363,18 @@
 
 .verde {
   color: #003614; }
+
+.linkG:hover {
+  color: #a3790e;
+  text-decoration: none; }
+
+.linkW:hover {
+  color: white;
+  text-decoration: none; }
+
+.linkV:hover {
+  color: #003614;
+  text-decoration: none; }
 
 .redes__color--twitter:hover {
   color: #41aaeb; }
@@ -282,6 +395,21 @@
 .footer__fuente {
   color: white; }
 
+.navbar__color {
+  color: #a3790e; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #a3790e; }
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: white; }
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: white; }
+
+.navbar-toggler {
+  background-color: white; }
+
 /* each */
 .blue {
   color: blue; }
@@ -295,15 +423,66 @@
 .white {
   color: white; }
 
+/* vista mobile */
+@media only screen and (max-width: 767px) {
+  .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: white; } }
+
 .fondo {
   background-color: #d1af59;
   width: 100%; }
 
+.fondo-img {
+  background-image: url(../assets/img/ravioles-dc.jpg);
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.fondo-img-fideos {
+  background-image: url(../assets/img/fideos-dc.jpg);
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.fondo-img-ñoquis {
+  background-image: url(../assets/img/ñoquis-dc.jpg);
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/* .paralax {
+    background-image: url(../img/Green\ and\ Yellow\ Plate\ of\ Pasta\ Direct\ Mail\ Postcard.jpg);
+    height: 100%;
+    background-attachment: fixed;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 30px;
+    margin-bottom: 50px;
+} */
 .backgroundVerde {
   background-color: #003614; }
 
 .backgroundGold {
   background-color: #d1af59; }
+
+.backgroundBlanco {
+  background-color: white; }
+
+.backgroundOscuro {
+  background-color: #222222; }
+
+.backgroundLogoSup {
+  background-color: rgba(255, 255, 255, 0.815); }
 
 .borderBlanco {
   box-shadow: 7px 13px 37px white; }
@@ -313,6 +492,9 @@
 
 .borderSucursal {
   box-shadow: 20px 20px 20px #000; }
+
+.borderTop {
+  border-top: 2px solid white; }
 
 /* extend */
 .formulario__input, .formulario__input--medio {
@@ -327,6 +509,19 @@
   font-family: 'Jost', sans-serif;
   font-weight: 400; }
 
+.kitchen {
+  font-family: 'Roboto Slab', serif;
+  text-align: justify;
+  letter-spacing: 25px; }
+
+.since {
+  font-family: 'Allison', cursive;
+  font-weight: 600; }
+
+.direcciones {
+  font-family: 'Alumni Sans', sans-serif;
+  font-weight: 400; }
+
 .fontGold {
   color: #a3790e; }
 
@@ -336,7 +531,7 @@
 .capitalize {
   text-transform: capitalize; }
 
-.CentrarTxt {
+.centrarTxt {
   text-align: center; }
 
 .fuente__google--contenido {
@@ -421,10 +616,12 @@
   list-style: none; }
 
 .days {
-  font-size: 25px; }
+  font-size: 25px;
+  color: black; }
 
 .hours {
-  font-size: 15px; }
+  font-size: 15px;
+  color: black; }
 
 /* vista mobile */
 @media only screen and (max-width: 767px) {
@@ -458,7 +655,7 @@
 /* Formulario */
 .formulario__boxmod {
   width: 800px;
-  background-color: #003614;
+  background-color: rgba(255, 255, 255, 0.397);
   padding: 30px;
   margin: auto;
   margin-top: 100px;
@@ -468,13 +665,12 @@
 .formulario__boxmod h4 {
   font-size: 25px;
   margin-bottom: 20px;
-  color: white;
+  color: black;
   text-align: center;
   padding-bottom: 20px; }
 
 .formulario__boxmod p {
   font-size: 16px;
-  color: white;
   text-align: center;
   padding-top: 10px; }
 
@@ -489,7 +685,7 @@
 
 .botons {
   width: 100%;
-  background: #1f53;
+  background: #003614;
   border: none;
   padding: 12px;
   color: white;
