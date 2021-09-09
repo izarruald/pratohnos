@@ -478,6 +478,9 @@
 .backgroundBlanco {
   background-color: white; }
 
+.backgroundBlancoMobile {
+  background-color: white; }
+
 .backgroundOscuro {
   background-color: #222222; }
 
@@ -503,6 +506,11 @@
 
 .formulario__input--medio {
   color: white; }
+
+/* vista mobile */
+@media only screen and (max-width: 767px) {
+  .backgroundBlancoMobile {
+    background-color: rgba(255, 255, 255, 0.815); } }
 
 /* predeterminadas */
 .fontGoogle {
