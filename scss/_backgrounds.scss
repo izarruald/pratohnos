@@ -44,7 +44,6 @@
 .backgroundVerde {background-color: rgb(0, 54, 20);}
 .backgroundGold{background-color: rgb(209, 175, 89);}
 .backgroundBlanco {background-color:white;}
-.backgroundBlancoMobile {background-color:white;}
 .backgroundOscuro {background-color: #222222;}
 .backgroundLogoSup {background-color: rgba(255, 255, 255, 0.815);}
 .borderBlanco { box-shadow: 7px 13px 37px rgb(255, 255, 255); }
@@ -59,4 +58,13 @@
 /* vista mobile */
 @media only screen and (max-width: 767px){
     .backgroundBlancoMobile {background-color: rgba(255, 255, 255, 0.815)}
+    .fondo-img-ñoquis-mobile{
+        background-image: url(../assets/img/ñoquis-dc.jpg);
+        height: 100%;
+        width: 100%;
+        background-attachment: fixed;
+        background-position:center ;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }

@@ -42,5 +42,8 @@
 .horarios{padding-bottom: 50px;}  
 
 @media only screen and (max-width: 767px){
-    .formulario__boxmod{width: 90%;}
+    .formulario__boxmod{
+        width: 90%;
+        margin-top: 0px;
+    }
 }

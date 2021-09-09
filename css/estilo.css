@@ -137,6 +137,10 @@
 .d-flex {
   justify-content: center; }
 
+* {
+  padding: 0px;
+  margin: 0px; }
+
 .container-fluid {
   padding-left: 0px;
   padding-right: 0px; }
@@ -478,9 +482,6 @@
 .backgroundBlanco {
   background-color: white; }
 
-.backgroundBlancoMobile {
-  background-color: white; }
-
 .backgroundOscuro {
   background-color: #222222; }
 
@@ -510,7 +511,15 @@
 /* vista mobile */
 @media only screen and (max-width: 767px) {
   .backgroundBlancoMobile {
-    background-color: rgba(255, 255, 255, 0.815); } }
+    background-color: rgba(255, 255, 255, 0.815); }
+  .fondo-img-ñoquis-mobile {
+    background-image: url(../assets/img/ñoquis-dc.jpg);
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; } }
 
 /* predeterminadas */
 .fontGoogle {
@@ -520,11 +529,14 @@
 .kitchen {
   font-family: 'Roboto Slab', serif;
   text-align: justify;
-  letter-spacing: 25px; }
+  letter-spacing: 5px; }
 
 .since {
   font-family: 'Allison', cursive;
   font-weight: 600; }
+
+.desde {
+  font-family: 'Allison', cursive; }
 
 .direcciones {
   font-family: 'Alumni Sans', sans-serif;
@@ -705,7 +717,8 @@
 
 @media only screen and (max-width: 767px) {
   .formulario__boxmod {
-    width: 90%; } }
+    width: 90%;
+    margin-top: 0px; } }
 
 /* QUEDE EN 6:00min  https://www.youtube.com/watch?v=8MMTHeGpUgI&ab_channel=SoyAndresGarzon*/
 * {
