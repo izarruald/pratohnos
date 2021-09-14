@@ -521,12 +521,10 @@
     background-repeat: no-repeat;
     background-size: cover; }
   .fondo-img-fideos-mobile {
-    background-image: url(../assets/img/fideos-mobile.png);
-    height: 100%;
-    width: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url(../assets/img/fideos-mobile.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover; } }
 
 /* predeterminadas */
