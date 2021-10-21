@@ -1,55 +1,45 @@
-/* //con textos, parametros y retorno
-function concatenarTextos(texto1, texto2) {
-    let textoConcatenado = texto1 + " " + texto2;
-    return textoConcatenado; //Lucía Gomez
+
+//ARRAYS o LISTAS
+const listaDeProductos = ["1 Ñoquis", " 2 Fideos", "3 Ravioles", "4 Agnolotis"];
+alert(listaDeProductos.join("  "))
+
+for (let i = 0; i < listaDeProductos.length; i++) /* LENGTH CUENTA CANTIDAD DE ELEMENTOS UNO ABAJO DEL OTRO */ {
+    console.log(listaDeProductos[i]);
+}
+console.log(listaDeProductos)
+
+
+
+//console.log(listaDeCompras[3]);
+/* let listaAString = listaDeProductos.toString(); /* TODO EN UN SOLO toSTRING 
+console.log(listaAString); */
+let productoElegido = parseInt(prompt("Seleccione el numero de producto")); 
+
+//diapo35
+let relleno = prompt("ingrese el relleno de su pasta")
+let salsaSeleccionada = prompt("Selecciones una salsa para su pasta");
+
+const productos = [{ id: 1, producto: "Ñoquis", salsa : salsaSeleccionada, relleno : relleno , precio: 125 },
+    { id: 2, producto: "Fideo", salsa : salsaSeleccionada, relleno : relleno , precio: 70 },
+    { id: 3, producto: "Ravioles",salsa : salsaSeleccionada, relleno : relleno , precio: 50 },
+    { id: 4, producto: "Agnolotis", salsa : salsaSeleccionada, relleno : relleno , precio: 100 }
+];
+
+//FILTRER
+const elegido = productos.filter(producto => producto.id == productoElegido);
+console.log(elegido); 
+alert("Postres: Flan - Frutilla con crema - Budin de pan")
+//PUSH
+elegido.push(prompt("Ingrese el postre seleccionado")); /* AGREGO UNA NOTA MAS */
+
+
+let descuento = prompt("Usted tiene el descuento del 10% ?");
+
+
+if (descuento == "si"){
+    alert("El precio final con descuento será de: " + (elegido[0].precio - (elegido[0].precio / 10)))
+} else {
+    alert("No tiene descuento, su precio final es de: " + elegido.precio)
 }
 
-let nombre = prompt("Ingresa tu nombre"); //Lucía
-let apellido = prompt("Ingresa el apellido"); //Gomez
-let nombreCompleto = concatenarTextos(nombre, apellido); //Lucía Gomez
-alert("Hola " + nombreCompleto);
 
-
-
-
-
-//CON PARAMETROS
-let precioSinDescuento =parseFloat(prompt("ingrese el precio del producto"));
-//En cualquier parte del codigo
-function calcularDescuento (precio){
-    let precioConDescuento = precio - (precio / 10);
-    alert("El precio con descuento incluido es: $" + precioConDescuento);
-}
-calcularDescuento(precioSinDescuento);
-
-
-//SIN PARAMETROS
-let montoTotal = parseFloat(prompt("Ingrese el monto total del producto"));
-let numeroDeCuotas = parseFloat(prompt("Ingrese el numero de cuotas a pagar"));
-function calcularCuotas () {
-    let montoPorCuota = (montoTotal / numeroDeCuotas);
-    alert ("Su pago por cuota sera de: $" + montoPorCuota)
-}
-calcularCuotas () */
-
-
-function ingresarEntrada(){
-    let valor=prompt("Ingrese precio de producto"); //luchuga
-    return valor;//Lechuga
-}
-
-function procesarEntrada(valor){
-    let valorModificado= valor - (valor / 10);//lechuga
-    return valorModificado;
-}
-
-function mostrarSalida(valorFinal){
-    alert("Su valor con descuento es de " + valorFinal);
-    let valorCuotas=prompt("cantidad de cuotas")
-    let cuotas=valorFinal / valorCuotas;
-    alert("su valor por cuota es de " + cuotas)
-}
-
-let entrada=ingresarEntrada();//entrada="lechuga"
-let entradaModificada= procesarEntrada(entrada);//entradaModificada="el dato que ingresaste es lechuga"
-mostrarSalida(entradaModificada);//aqui vemos la salida por el alert
