@@ -35,11 +35,17 @@ elegido.push(prompt("Ingrese el postre seleccionado")); /* AGREGO UNA NOTA MAS *
 
 let descuento = prompt("Usted tiene el descuento del 10% ?");
 
-
-if (descuento == "si"){
+//Correciones (elegido[0]) y (descuento.toLowerCase() == "si")
+if (descuento.toLowerCase() == "si" ){
     alert("El precio final con descuento será de: " + (elegido[0].precio - (elegido[0].precio / 10)))
 } else {
-    alert("No tiene descuento, su precio final es de: " + elegido.precio)
+    alert("No tiene descuento, su precio final es de: " + elegido[0].precio)
+}
+calcularIva(elegido[0].precio)
+//Agregado de function
+function calcularIva (precioSinIva){
+    let precioConIva = precioSinIva * 1.21;
+    alert("El precio con IVA agregado es de: " + precioConIva)
 }
 
 
