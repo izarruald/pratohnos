@@ -85,7 +85,7 @@
 				<p class="fontTamanio5 colorNegro direcciones marginB">Esteban Adrogué 1061</p>
 			</div>
 			<div class="col-lg-12 col-xs-12 padding boxmodCentrar centrarTxt">
-				<p class="fontTamanio5 colorNegro direcciones">Cangallo 50, Temperley</p>
+				<p class="fontTamanio5 colorNegro direcciones capitalize">Cangallo 50, Temperley</p>
 			</div>
 		</div> 
 	</div>
@@ -105,8 +105,27 @@
 				<img src="./assets/img/prato-viejo-oro.jpg.png" width="350px" height="350px" class="" alt="LOGO">
 			</div>
 		</div>
-		<div id="div1"></div>
 	</section>
+
+		<!-- Section Contenido-->
+		<section class="container-fluid backgroundBlanco inferior boxmodCentrar ">
+			<div class="row paddingTB fontGoogle fontCenter">
+				<div class="col-lg-12 col-xs-12 ">
+					<table class="inferior capitalize" id="inferior">
+					</table>
+				<!-- Clase 9 eventos -->
+				<button class="btn btn-success" id="miBoton">INTERACTUAR</button>
+				<p></p>
+				<form id="formulario">
+					<input id="nombre" type="text" placeholder="ingresa tu nombre" onkeypress="capturarEnter(event)">
+					<!--  -->
+					<input id="edad" type="text" placeholder="ingresa tu edad" onchange="activarValidador(this)">
+					<!--  -->
+					<input type="submit" value="Enviar">
+				</form>
+				</div>
+			</div>
+		</section>
 
     <!-- footer -->
     <footer class="footer backgroundOscuro fontGoogle">
