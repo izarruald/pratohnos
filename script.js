@@ -11,14 +11,9 @@ console.log(listaDeProductos)
 
 
 
-//console.log(listaDeCompras[3]);
 let listaAString = listaDeProductos.toString(); //TODO EN UN SOLO toSTRING 
 console.log(listaAString); 
  let productoElegido = parseInt(prompt("Seleccione el numero de producto")); 
-
-/* //seleccion de producto y agregado a al array
-let relleno = prompt("ingrese el relleno de su pasta")
-let salsaSeleccionada = prompt("Selecciones una salsa para su pasta"); */
 
 const productos = [{ id: 1, producto: "Ñoquis", salsa : "fileto", relleno : "Papa" , precio: 125 },
     { id: 2, producto: "Fideo", salsa : "bolognesa", relleno : "Verdura" , precio: 70 },
@@ -30,10 +25,6 @@ const productos = [{ id: 1, producto: "Ñoquis", salsa : "fileto", relleno : "Pa
 //FILTRER
 const elegido = productos.filter(producto => producto.id == productoElegido);
 console.log(elegido); 
-/* 
-alert("Postres: Flan - Frutilla con crema - Budin de pan")
-//PUSH
-elegido.push(prompt("Ingrese el postre seleccionado")); // AGREGO UNA NOTA MAS  */
 
 
 let descuento = prompt("Usted tiene el descuento del 10% ?");
@@ -44,12 +35,15 @@ if (descuento.toLowerCase() == "si" ){
 } else {
     alert("No tiene descuento, su precio final es de: " + elegido[0].precio)
 }
-/* calcularIva(elegido[0].precio)
-//Agregado de function
-function calcularIva (precioSinIva){
-    let precioConIva = precioSinIva * 1.21;
-    alert("El precio con IVA agregado es de: " + precioConIva)
-}  */
+
+let pepe = document.getElementsByTagName("p");
+let numCuotas = parseInt(prompt("Ingrese cantida de cuotas"))
+let productoJson = "Producto elegido " + elegido + "cantidad de cuotas " + (elegido / numCuotas) ; 
+
+const AJSON = JSON.stringify(productoJson);
+pepe[4].innerText = JSON.parse(AJSON); 
+
+
 
 
 //tabla con DOM
@@ -77,43 +71,12 @@ tabla.appendChild(tablaBody);
 document.getElementById("inferior").appendChild(tabla);
 
 
-/* for (const producto of productos) {
-    let contenedor = document.createElement("div");
-    //Definimos el innerHTML del elemento con una plantilla de texto
-    contenedor.innerHTML = `<h3> ID: ${producto.id}</h3>
-                            <p>  Producto: ${producto.producto}</p>
-                            <b> $ ${producto.precio}</b>`;
-    document.body.appendChild(contenedor);
-} */
-
-/* //UNICA FORMA QUE ME APARECIO EN LA PAGINA
-//tabla con DOM
-let tabla = document.createElement("table");
-tabla.setAttribute("class", "table table-striped");
-let tablaBody = document.createElement("tbody");
-
-for (const producto of productos) {
-    let contenedor = document.createElement("tr");
-    //Definimos el innerHTML del elemento con una plantilla de texto
-    contenedor.innerHTML = `<td><h3> ID: ${producto.id}</h3></td>
-                            <td><p>  Producto: ${producto.producto}</p></td>
-                            <td><b> $ ${producto.precio}</b></td>`;
-    document.getElementById("tabla").appendChild(contenedor);
-}
-
-tabla.appendChild(tablaBody);
-document.body.appendChild(tabla);*/
-
 
 //TAG ETIQUETA
 let parrafos = document.getElementsByTagName("p");
 let ingresadoPrompt = prompt("Ingrese su nombre aqui")
 parrafos[2].innerText = "Hola " + ingresadoPrompt + ", bienvenido/a"; 
 
-//EVENTOS DOM
-//OPCION 1
-/* let boton = document.getElementById("miBoton");
-boton.addEventListener("click", interactuar); */
 
 //OPCION 2
 let boton = document.getElementById("miBoton");
