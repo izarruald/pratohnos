@@ -1,4 +1,9 @@
 
+//TAG ETIQUETA
+let parrafos = document.getElementsByTagName("p");
+let ingresadoPrompt = prompt("Ingrese su nombre aqui")
+parrafos[2].innerText = "Hola " + ingresadoPrompt + ", bienvenido/a"; 
+
 //ARRAYS o LISTAS
 const listaDeProductos = [ "Menu del día", "1 Ñoquis de papa con salsa fileto ($125)", " 2 Fideos de verdura con salsa bolognesa ($70)", "3 Ravioles de ricota con salsa bolognesa ($50)", "4 Agnolotis de jamon y queso con salsa bolognesa ($100)"];
 alert(listaDeProductos.join(" - "))
@@ -10,15 +15,19 @@ for (let i = 0; i < listaDeProductos.length; i++) //LENGTH CUENTA CANTIDAD DE EL
 console.log(listaDeProductos) 
 
 
-
 let listaAString = listaDeProductos.toString(); //TODO EN UN SOLO toSTRING 
 console.log(listaAString); 
  let productoElegido = parseInt(prompt("Seleccione el numero de producto")); 
 
-const productos = [{ id: 1, producto: "Ñoquis", salsa : "fileto", relleno : "Papa" , precio: 125 },
+/* const productos = [{ id: 1, producto: "Ñoquis", salsa : "fileto", relleno : "Papa" , precio: 125 },
     { id: 2, producto: "Fideo", salsa : "bolognesa", relleno : "Verdura" , precio: 70 },
     { id: 3, producto: "Ravioles",salsa : "bolognesa", relleno : "Ricota" , precio: 50 },
     { id: 4, producto: "Agnolotis", salsa : "bolognesa", relleno : "Jamon y queso" , precio: 100 }
+]; */
+const productos = [{ id: 1, producto: "Ñoquis de papa con salsa fileto" , precio: 125 },
+    { id: 2, producto: "Fideos de verdura con salsa bolognesa" , precio: 70 },
+    { id: 3, producto: "Ravioles de ricota con salsa bolognesa", precio: 50 },
+    { id: 4, producto: "Agnolotis de jamon y queso con salsa bolognesa" , precio: 100 }
 ];
 
 
@@ -27,21 +36,28 @@ const elegido = productos.filter(producto => producto.id == productoElegido);
 console.log(elegido); 
 
 
-let descuento = prompt("Usted tiene el descuento del 10% ?");
+let descuento = prompt("Ingrese cupon de descuento (10%)");
 
 //Correciones (elegido[0]) y (descuento.toLowerCase() == "si")
-if (descuento.toLowerCase() == "si" ){
+if (descuento == "Prato123" || "prato123" || "PRATO123" ){
     alert("El precio final con descuento será de: " + (elegido[0].precio - (elegido[0].precio / 10)))
 } else {
     alert("No tiene descuento, su precio final es de: " + elegido[0].precio)
 }
 
+//DOM
 let pepe = document.getElementsByTagName("p");
 let numCuotas = parseInt(prompt("Ingrese cantida de cuotas"))
-let productoJson = "Producto elegido " + elegido + "cantidad de cuotas " + (elegido / numCuotas) ; 
+let productoJson = "Producto elegido: " + elegido[0].producto; 
+let precioJson = "Precio por cuota: " + (elegido[0].precio / numCuotas).toFixed(2);
+const AJSONProducto = JSON.stringify(productoJson); 
+const AJSONPrecio = JSON.stringify(precioJson); 
+pepe[4].innerText = JSON.parse(AJSONProducto);
+pepe[5].innerText = JSON.parse(AJSONPrecio);  
 
-const AJSON = JSON.stringify(productoJson);
-pepe[4].innerText = JSON.parse(AJSON); 
+//local storage
+localStorage.setItem ("Producto elegido", AJSONProducto);
+localStorage.setItem ("Precio por cuota", AJSONPrecio);
 
 
 
@@ -57,9 +73,10 @@ for (const producto of productos) {
     //plantillas literales
     fila.innerHTML = `<td> ${producto.id}</td>
     <td>${producto.producto}</td>
-    <td>${producto.salsa}</td>
-    <td>${producto.relleno}</td>
     <td><b>$ ${producto.precio}</b></td>`;
+/*  <td>${producto.salsa}</td>
+    <td>${producto.relleno}</td> */
+    
     //guarda la final
     tablaBody.appendChild(fila);
 }
@@ -72,10 +89,7 @@ document.getElementById("inferior").appendChild(tabla);
 
 
 
-//TAG ETIQUETA
-let parrafos = document.getElementsByTagName("p");
-let ingresadoPrompt = prompt("Ingrese su nombre aqui")
-parrafos[2].innerText = "Hola " + ingresadoPrompt + ", bienvenido/a"; 
+
 
 
 //OPCION 2
@@ -93,15 +107,14 @@ function interactuar(){
     alert("Hola " + nombre + " hoy es " + fecha);
 } 
 
-//Evento de teclado desde html detectando el ENTER
+//Evento de teclado desde html detectando el ENTER (Sirve para detectar la tecla presionada, en este caso el enter)
 function capturarEnter(evento) {
     //codigo 13 = enter
     if (evento.which == 13 || evento.keyCode == 13) {
+        evento.preventDefault()
         alert("Presionaste ENTER");
-        interactuar();
     }
 }
-//Sirve para detectar la tecla presionada, en este caso el enter
 
 //Evento onchange desde html (OPCION 3, desde html)
 //ONCHANGE (detecta cuando se pasa de un campo a otro)

@@ -114,14 +114,15 @@
 					<h2>Menu del dia</h2>
 					<table class="inferior capitalize" id="inferior">
 					</table>
-					<p class="cuotas"></p>
+					<button class="btn btn-success" id="miBoton">Haga su pedido</button>
+					<p class="productoJson"></p>
+					<p class="precioJson"></p>
 				<!-- Clase 9 eventos -->
-				<button class="btn btn-success" id="miBoton">INTERACTUAR</button>
-				<p></p>
+				<!--   -->
 				<form id="formulario">
 					<input id="nombre" type="text" placeholder="ingresa tu nombre" onkeypress="capturarEnter(event)">
 					<!--  -->
-					<input id="edad" type="text" placeholder="ingresa tu edad" onchange="activarValidador(this)">
+					<input id="edad" type="text" placeholder="ingresa tu edad" onchange="activarValidador(this)" onkeypress="capturarEnter(event)">
 					<!--  -->
 					<input type="submit" value="Enviar">
 				</form>
