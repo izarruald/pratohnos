@@ -6,19 +6,20 @@
 @import "colores";
 /* camelCase */
 .padding {padding-left: 0px; padding-right: 0px;}
+.paddingSpace {padding: 5px;}
 .paddingT {padding-top: 40px;}
 .paddingB {padding-bottom: 40px;}
 .paddingTB {padding-top: 50px;padding-bottom: 50px;}
 .marginB {margin-bottom: 5px;}
 .marginBB {margin-bottom: 18px;}
-
+.boxmodCentrar {display: flex; justify-content: center; align-items: center;}
+.boxmodIzq {display: flex; justify-content: center; align-items: center;}
 /* editados de BEM */
 .redes__padding{padding-left: 8px; padding-right: 8px; padding-bottom: 15px; text-decoration: none;}
 .nosotros {padding-bottom: 60px;}
 .row {margin-right: 0px; margin-left: 0px;}
 .d-flex {justify-content: center;}
 .footer__margin{margin-bottom: 3px;}
-.boxmodCentrar {display: flex; justify-content: center; align-items: center;}
 .footer__telefono {padding-top: 75px;}
 .footer__seguinos {padding-top: 25px;}
 .footer__paddingTB {padding-top: 40px;padding-bottom: 10px;}

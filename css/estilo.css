@@ -278,6 +278,9 @@
   padding-left: 0px;
   padding-right: 0px; }
 
+.paddingSpace {
+  padding: 5px; }
+
 .paddingT {
   padding-top: 40px; }
 
@@ -293,6 +296,16 @@
 
 .marginBB {
   margin-bottom: 18px; }
+
+.boxmodCentrar {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.boxmodIzq {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 /* editados de BEM */
 .redes__padding {
@@ -313,11 +326,6 @@
 
 .footer__margin {
   margin-bottom: 3px; }
-
-.boxmodCentrar {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
 
 .footer__telefono {
   padding-top: 75px; }
@@ -798,3 +806,7 @@ body {
 @media screen and (min-width: 960px) {
   .container {
     grid-template-columns: repeat(3, 1fr); } }
+
+.filaPrueba {
+  background-color: white;
+  color: blue; }
