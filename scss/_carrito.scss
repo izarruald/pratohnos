@@ -2,3 +2,13 @@
     background-color: white;
     color: blue;
 }
+.cards {
+    margin: 10px;
+    width: 50%;
+    height: 90%;
+}
+.cards:hover{
+    transition-duration: 3s, 1s;
+    transition-property: margin-right,
+}
+

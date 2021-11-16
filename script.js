@@ -64,8 +64,9 @@ function suscribir() {
 
 function renderizarProductos() {
     for (const producto of productos) {
-        $(".milista").append(`<li class="list-group-item paddingSpace"><h3>ID: ${producto.id}</h3>
-        <img  src=${producto.foto} width="300" height="250">
+        $(".milista").append(`<li class="list-group-item cards" id='cardsId'><h3> ${producto.nombre}</h3>
+        <p>ID: ${producto.id}</p>
+        <img  src=${producto.foto} width="250" height="200">
         <p> Producto: ${producto.producto}</p>
         <b> $ ${producto.precio}</b>
         <button class='btn btn-danger boxmodCentrar' id='btn${producto.id}'>Comprar</button>
@@ -96,11 +97,11 @@ function agregarAlCarrito(productoNuevo) {
     localStorage.setItem("miCarrito", JSON.stringify(carrito));
 }
 
-
-const productos = [{ id: 1, producto: "Ñoquis de papa con salsa fileto" ,foto: "./assets/img/ñoquisSalsa.jpg" ,precio: 125 },
-{ id: 2, producto: "Fideos de verdura con salsa bolognesa" ,foto: "./assets/img/fideosVerdes.jpg", precio: 70 },
-{ id: 3, producto: "Ravioles de ricota con salsa bolognesa",foto: "./assets/img/raviolesSalsa.jpg", precio: 50 },
-{ id: 4, producto: "Agnolotis de jamon y queso con salsa bolognesa" ,foto: "./assets/img/pastas5.jpg ", precio: 100 }
+//PRODUCTOS
+const productos = [{ id: 1, producto: "Ñoquis de papa con salsa fileto" ,nombre:"Ñoquis",foto: "./assets/img/ñoquisSalsa.jpg" ,precio: 125 },
+{ id: 2, producto: "Fideos de verdura con salsa bolognesa" ,nombre:"Fideos",foto: "./assets/img/fideosVerdes.jpg", precio: 70 },
+{ id: 3, producto: "Ravioles de ricota con salsa bolognesa",nombre:"Ravioles",foto: "./assets/img/raviolesSalsa.jpg", precio: 50 },
+{ id: 4, producto: "Agnolotis de jamon y queso con salsa bolognesa" ,nombre:"Agnolotis",foto: "./assets/img/pastas5.jpg ", precio: 100 }
 ]; 
 
 //tabla con DOM
@@ -127,11 +128,49 @@ tabla.appendChild(tablaBody);
 document.getElementById("inferior").appendChild(tabla);
 
 
- //Evento onchange desde html (OPCION 3, desde html)
+//Evento onchange desde html (OPCION 3, desde html)
 //ONCHANGE (detecta cuando se pasa de un campo a otro)
 function activarValidador(entrada) {
     let edadInput = entrada.value;
     if (edadInput < 1 || edadInput > 100) {//Debajo de 1 y superior a 100
         alert("Edad invalida!");
     }
-} 
+}
+
+//Animaciones con JS
+//Arranque de animate
+$("#inferior").animate({ //Modifica las caracteristicas del animate
+    opacity: 0.33, 
+},
+3000, //duracion 
+function() {
+    console.log("FIN DE ANIMATE"); //callback
+}); 
+
+//SLIDE UP Y DOWN
+$("#inferior").css("opacity", "0,6")
+    
+    .slideUp(2000)// se desplaza hacia arriba con una duracion de 2s
+    .delay(3000) //metodo delay esperar 6 segundos para que se ejecute
+    .slideDown(2000);// se desplaza hacia abajo con una duracion de 2s
+
+
+//Arranque de segundo animate    
+$("#inferior").animate({ //Modifica las caracteristicas del animate
+    opacity: 1.00, 
+},
+3000, //duracion 
+function() {
+    console.log("FIN DE ANIMATE"); //callback
+}); 
+
+
+//BOTON DESPLEGAR
+/* $("#btnMenu").click(function() {
+    abrirMenu();
+});
+
+function abrirMenu (){
+    $("#suscripcion").append(`
+    <div id='inferior'> </div>`);
+} */
