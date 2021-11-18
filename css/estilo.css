@@ -274,6 +274,9 @@
     color: white; } }
 
 /* camelCase */
+.display {
+  display: none; }
+
 .padding {
   padding-left: 0px;
   padding-right: 0px; }
@@ -291,6 +294,9 @@
   padding-top: 50px;
   padding-bottom: 50px; }
 
+.margin {
+  margin: 10px; }
+
 .marginB {
   margin-bottom: 5px; }
 
@@ -306,10 +312,6 @@
   display: flex;
   justify-content: center;
   align-items: center; }
-
-.cardsMedidas {
-  width: 100%;
-  height: 100%; }
 
 /* editados de BEM */
 .redes__padding {
@@ -340,6 +342,11 @@
 .footer__paddingTB {
   padding-top: 40px;
   padding-bottom: 10px; }
+
+.imgRedonda {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px; }
 
 @media only screen and (min-width: 1024px) {
   .navbar-expand-lg .navbar-collapse {

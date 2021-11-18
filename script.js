@@ -64,19 +64,36 @@ function suscribir() {
 
 function renderizarProductos() {
     for (const producto of productos) {
-        $(".milista").append(`<li class="list-group-item cards" id='cardsId'><h3> ${producto.nombre}</h3>
-        <p>ID: ${producto.id}</p>
-        <img  src=${producto.foto} width="250" height="200">
-        <p> Producto: ${producto.producto}</p>
-        <b> $ ${producto.precio}</b>
+        $(".milista").append(`<li class="list-group-item cards" id='cardsId'><h3 class='boxmodCentrar'> ${producto.nombre}</h3>
+        <p class='display'>ID: ${producto.id}</p>
+        <img src=${producto.foto} width="250" height="200">
+        <p class='paddingT'> Producto: ${producto.producto}</p>
+        <b class='paddingB'> $ ${producto.precio}</b>
         <button class='btn btn-danger boxmodCentrar' id='btn${producto.id}'>Comprar</button>
         </li>`);//CREA BTN CON CLASS Y ID
         //Eventos para cada boton
         $(`#btn${producto.id}`).on('click', function() {
             agregarAlCarrito(producto); //mando completo el objeto literal
+            Swal.fire(
+                'Nuevo producto agrregado al carrito',
+                $('#btn').val(),
+                'success'
+            )
         });
     }
 }
+
+function calcularTotalCarrito(){
+    let total = 0;
+    for (const producto of carrito) {
+        total += producto.precio;
+        console.log(total);
+    }
+    $(".carritoContador").append(`<h3>${total}</h3>`)
+}
+
+calcularTotalCarrito()
+
 
 function agregarAlCarrito(productoNuevo) {
     carrito.push(productoNuevo);
@@ -90,12 +107,9 @@ function agregarAlCarrito(productoNuevo) {
     localStorage.setItem("miCarrito", JSON.stringify(carrito));
 }
 
-function agregarAlCarrito(productoNuevo) {
-    carrito.push(productoNuevo);
-    console.log(carrito);
-    //sweet alert
-    localStorage.setItem("miCarrito", JSON.stringify(carrito));
-}
+
+
+
 
 //PRODUCTOS
 const productos = [{ id: 1, producto: "Ñoquis de papa con salsa fileto" ,nombre:"Ñoquis",foto: "./assets/img/ñoquisSalsa.jpg" ,precio: 125 },
@@ -137,40 +151,46 @@ function activarValidador(entrada) {
     }
 }
 
-//Animaciones con JS
-//Arranque de animate
-$("#inferior").animate({ //Modifica las caracteristicas del animate
-    opacity: 0.33, 
-},
-3000, //duracion 
-function() {
-    console.log("FIN DE ANIMATE"); //callback
-}); 
 
-//SLIDE UP Y DOWN
-$("#inferior").css("opacity", "0,6")
-    
-    .slideUp(2000)// se desplaza hacia arriba con una duracion de 2s
-    .delay(3000) //metodo delay esperar 6 segundos para que se ejecute
-    .slideDown(2000);// se desplaza hacia abajo con una duracion de 2s
+$(document).ready(function(){
+    $(".btn1").click(function(){
+        $("#inferior")
+        .slideUp(2000);// se desplaza hacia abajo con una duracion de 2s
+    });
+    $(".btn2").click(function(){
+      $("#inferior").slideDown(2000);
+    });
+  });
 
+//AJAX
+//Llamada GET
+function obtenerDatos() {
+    //URL de datos
+    const URLGET = "http://hp-api.herokuapp.com/api/characters/house/gryffindor";
+    //.DONE: cuando se termine de obtener ese Get se activa la funcion callback. function callback que recibe un resultado y un estado ()
+    $.get(URLGET).done(function(resultado, estado) {
+        //manera de ver la obtencion de datos (succes = acceso)
+        console.log("El estado que retorna la API es: " + estado);
+        if (estado == "success") {
+            //solo los libros (resultado.books)
+            let libros = resultado.slice(0,3);
+            //por cada libro de libros 
+            libros.forEach(libro => {
+                //libros = ID de index
+                //ForEach                   
+                $("#libros").append("<tr><td>" + libro.name + "</td><td>" + libro.house + "</td><td><img   width='80' height='100' src=" + libro.image + "></td></tr>");
+            });
+        }
+    });
+}  
 
-//Arranque de segundo animate    
-$("#inferior").animate({ //Modifica las caracteristicas del animate
-    opacity: 1.00, 
-},
-3000, //duracion 
-function() {
-    console.log("FIN DE ANIMATE"); //callback
-}); 
+obtenerDatos();
 
-
-//BOTON DESPLEGAR
-/* $("#btnMenu").click(function() {
-    abrirMenu();
-});
-
-function abrirMenu (){
-    $("#suscripcion").append(`
-    <div id='inferior'> </div>`);
-} */
+$(document).ready(function(){
+    $(".boton1").click(function(){
+        $("#tablaHarry").slideUp(3000);// se desplaza hacia abajo con una duracion de 2s
+    });
+    $(".boton2").click(function(){
+      $("#tablaHarry").slideDown(500);
+    });
+  });

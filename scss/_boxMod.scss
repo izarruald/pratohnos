@@ -5,11 +5,13 @@
 @import "tamanios";
 @import "colores";
 /* camelCase */
+.display {display: none;}
 .padding {padding-left: 0px; padding-right: 0px;}
 .paddingSpace {padding: 5px;}
 .paddingT {padding-top: 40px;}
 .paddingB {padding-bottom: 40px;}
 .paddingTB {padding-top: 50px;padding-bottom: 50px;}
+.margin {margin: 10px;}
 .marginB {margin-bottom: 5px;}
 .marginBB {margin-bottom: 18px;}
 .boxmodCentrar {display: flex; justify-content: center; align-items: center;}
@@ -23,6 +25,11 @@
 .footer__telefono {padding-top: 75px;}
 .footer__seguinos {padding-top: 25px;}
 .footer__paddingTB {padding-top: 40px;padding-bottom: 10px;}
+.imgRedonda {
+    width:300px;
+    height:300px;
+    border-radius:150px;
+}
 
 @media only screen and (min-width: 1024px){
     .navbar-expand-lg .navbar-collapse{justify-content: flex-end;}
