@@ -15,6 +15,10 @@
 .marginB {margin-bottom: 5px;}
 .marginBB {margin-bottom: 18px;}
 .boxmodCentrar {display: flex; justify-content: center; align-items: center;}
+.boxmodDer {
+    display: flex;
+    justify-content: end;
+    align-items: center;}
 .boxmodIzq {display: flex; justify-content: center; align-items: center;}
 /* editados de BEM */
 .redes__padding{padding-left: 8px; padding-right: 8px; padding-bottom: 15px; text-decoration: none;}

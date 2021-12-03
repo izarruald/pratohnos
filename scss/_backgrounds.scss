@@ -1,4 +1,11 @@
 @import "colores";
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: $verde;
+    padding-top: 20px;
+}
 .fondo {background-color: rgb(209, 175, 89); width: 100%; }  
 .fondo-img{
     background-image: url(../assets/img/ravioles-dc.jpg);
@@ -45,6 +52,7 @@
 .backgroundGold{background-color: rgb(209, 175, 89);}
 .backgroundBlanco {background-color:white;}
 .backgroundOscuro {background-color: #222222;}
+.backgroundOscuroGold {background-color: #3d3d3d;}
 .backgroundLogoSup {background-color: rgba(255, 255, 255, 0.815);}
 .borderBlanco { box-shadow: 7px 13px 37px rgb(255, 255, 255); }
 .borderNegro { box-shadow: 7px 13px 37px #000; }

@@ -45,6 +45,9 @@
   background-color: white;
   color: black; }
 
+.btn-light:hover {
+  color: #992f6d; }
+
 .entrevista__color {
   color: #a3790e; }
 
@@ -234,6 +237,9 @@
   background-color: white;
   color: black; }
 
+.btn-light:hover {
+  color: #992f6d; }
+
 .entrevista__color {
   color: #a3790e; }
 
@@ -306,6 +312,11 @@
 .boxmodCentrar {
   display: flex;
   justify-content: center;
+  align-items: center; }
+
+.boxmodDer {
+  display: flex;
+  justify-content: end;
   align-items: center; }
 
 .boxmodIzq {
@@ -412,6 +423,9 @@
   background-color: white;
   color: black; }
 
+.btn-light:hover {
+  color: #992f6d; }
+
 .entrevista__color {
   color: #a3790e; }
 
@@ -450,6 +464,13 @@
 @media only screen and (max-width: 767px) {
   .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
     color: white; } }
+
+.warnings {
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: #003614;
+  padding-top: 20px; }
 
 .fondo {
   background-color: #d1af59;
@@ -503,6 +524,9 @@
 
 .backgroundOscuro {
   background-color: #222222; }
+
+.backgroundOscuroGold {
+  background-color: #3d3d3d; }
 
 .backgroundLogoSup {
   background-color: rgba(255, 255, 255, 0.815); }
@@ -562,6 +586,9 @@
 
 .desde {
   font-family: 'Allison', cursive; }
+
+.sizeCarrito {
+  font-size: 50px; }
 
 .direcciones {
   font-family: 'Alumni Sans', sans-serif;
@@ -823,8 +850,8 @@ body {
   color: blue; }
 
 .cards {
-  margin: 10px;
-  width: 50%;
+  margin: 2%;
+  width: 100%;
   height: 90%; }
 
 .cards:hover {
