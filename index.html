@@ -47,15 +47,15 @@
 								<li class="nav-item">
 									<a class="nav-link" href="./views/contacto.html">Contacto</a>
 								</li>
-								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										Sucursales
-									</a>
-									<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-										<a class="dropdown-item" href="./views/sucursal-adrogue.html">Adrogué</a>
-										<a class="dropdown-item" href="./views/sucursal-temperley.html">Temperley</a>
-									</div>
-								</li>
+								<div class="dropdown">
+									<button class="btn colorBlanco dropdown-toggle linkW colorGold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+									  Sucursales
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <a class="dropdown-item" href="./views/sucursal-adrogue.html">Adrogué</a>
+                                        <a class="dropdown-item" href="./views/sucursal-temperley.html">Temperley</a>
+									</ul>
+								</div>
 								<li class="nav-item">
 									<a class="nav-link" href="./views/nosotros.html">Nosotros</a>
 								</li>
@@ -114,55 +114,9 @@
 		</div>
 	</section>
 
-
-<!-- 	<div class="container-fluid">
+	<div class="container-fluid  sizeCarrito backgroundOscuroGold">
 		<div class="row">
-			<div class="col-lg-12 paddingT boxmodCentrar backgroundOscuro">
-				<select id="miSeleccion" class="form-select" aria-label="Default select example">
-					<option value="pordefecto">ORDENAR</option>
-					<option value="menor">Por menor precio</option>
-					<option value="mayor">Por mayor precio</option>
-					<option value="alfabetico">Por orden alfabético</option>
-				</select>
-			</div>
-		</div>
-	</div> -->
-
-	<!-- PRODUCTOS -->
-<!-- 	<div class="container-fluid boxmodCentrar backgroundOscuro ">
-		<div class="row fontGoogle">
-			<div class="col-lg-12 col-xs-12 paddingTB fontGoogle carritoContador">
-				<ul class="milista list-group list-group-horizontal" >
-					<!-- Aqui los productos 
-				</ul>
-			</div>
-		</div>
-	</div> -->
-
-
-
-
-<!-- <div class="container-fluid miCarrito">
-		<div class="row">
-			 Elementos generados a partir del JSON 
-			<main id="items" class="col-lg-12 row"></main>
-			 Carrito 
-			<aside class="col-lg-12">
-				<h2>Carrito</h2>
-				 Elementos del carrito
-				<ul id="carrito" class="list-group"></ul>
-				<hr>
-				 Precio total 
-				<p class="text-right">Total: <span id="total"></span>&euro;</p>
-				<button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
-			</aside>
-		</div>
-	</div> -->
-
-
-	<div class="container-fluid direcciones sizeCarrito backgroundOscuroGold">
-		<div class="row">
-			<div id="fila_prueba" class="col-lg-12 col-xs-12  backgroundVerde" ></div>
+			<div id="fila_prueba" class="col-lg-12 col-xs-12 sizeDolar backgroundVerde" ></div>
 			<div class="col-lg-12 col-xs-12  paddingTB">
 				<div id="boton" class="boxmodDer">
 					<!-- Aqui el boton -->
@@ -170,7 +124,7 @@
 			</div>
 			<div class="boxmodCentrar col-lg-12 col-xs-12">
 				<div class="col-md-2">
-					<select id="miSeleccion" class="form-select " aria-label="Default select example">
+					<select id="miSeleccion" class="form-select sizeOrdenar fontGoogle" aria-label="Default select example">
 						<option value="pordefecto">ORDENAR</option>
 						<option value="menor">Por menor precio</option>
 						<option value="mayor">Por mayor precio</option>
@@ -185,11 +139,11 @@
 				</ul>
 				<p></p>
 			</div>
-			<div class="paddingTB colorBlanco col-lg-12 col-xs-12">
-				<h4>Tu carrito:</h4>
+			<div class="container-fluid paddingTB colorBlanco col-lg-12 col-xs-12">
+				<h4 class="paddingLeft">Tu carrito:</h4>
 				<table class="table table-striped">
 					<thead>
-						<tr class="colorBlanco">
+						<tr class="colorBlanco sizeTabla">
 							<th scope="col">ID</th>
 							<th scope="col">Producto</th>
 							<th scope="col">Cantidad</th>
@@ -208,41 +162,6 @@
 		</div>
     </div>
 	
-
-
-
-
-<!-- 	<section class="container-fluid fontGoogle">
-		<div class="row boxmodCentrar backgroundLogoSup">
-			<div class="col-lg-12 boxmodCentrar">
-				<h3>Celebridades que visitaron nuestro establecimiento</h3>
-			</div>
-			<button class="boton2 margin">Abrir Lista</button>
-			<button class="boton1">Cerrar Lista</button>
-		</div>
-        <table id="tablaHarry" style="display: none;" class="table table-dark">
-            <thead>
-                <tr>
-                    <th>Alumno</th>
-                    <th>Casa</th>
-                </tr>
-            </thead>
-            <tbody id="libros">
-                <!-- aca ingresan los datos del json libros
-            </tbody>
-        </table>
-    </section> -->
-
-	<!-- subscripcion ON CLICK
-	<div class="container-fluid backgroundLogoSup">
-		<div class="row fontGoogle">
-			<div class="col-lg-12 col-xs-12" id="suscripcion">
-				<!-- Aquí suscripcion 
-			</div>
-		</div>
-	</div> -->
-
-
 
 
     <!-- footer -->
@@ -302,6 +221,7 @@
 	<!-- Sweet Alert -->
 	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<!-- Mi script -->
+	<script src="carrito.js"></script>
 	<script src="script.js"></script>
 	<script>
 		AOS.init();

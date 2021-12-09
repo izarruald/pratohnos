@@ -36,9 +36,9 @@
     },
     { 
         "id": 6, 
-        "producto": "Fideos de verdura con salsa bolognesa" ,
-        "nombre":"Fideos",
-        "foto": "./assets/img/fideosVerdes.jpg", 
-        "precio": 700
+        "producto": "Cervezas Importadas" ,
+        "nombre":"Cerveza",
+        "foto": "./assets/img/cervezas.jpg", 
+        "precio": 250
     }
 ]

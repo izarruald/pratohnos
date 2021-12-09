@@ -8,6 +8,9 @@
 .color__gold {
   color: #a3790e; }
 
+.colorGold {
+  color: #a3790e; }
+
 .colorFondo {
   color: #d1af59; }
 
@@ -200,6 +203,9 @@
 .color__gold {
   color: #a3790e; }
 
+.colorGold {
+  color: #a3790e; }
+
 .colorFondo {
   color: #d1af59; }
 
@@ -300,6 +306,9 @@
   padding-top: 50px;
   padding-bottom: 50px; }
 
+.paddingLeft {
+  padding-left: 3%; }
+
 .margin {
   margin: 10px; }
 
@@ -384,6 +393,9 @@
   color: white; }
 
 .color__gold {
+  color: #a3790e; }
+
+.colorGold {
   color: #a3790e; }
 
 .colorFondo {
@@ -587,9 +599,6 @@
 .desde {
   font-family: 'Allison', cursive; }
 
-.sizeCarrito {
-  font-size: 50px; }
-
 .direcciones {
   font-family: 'Alumni Sans', sans-serif;
   font-weight: 400; }
@@ -611,6 +620,13 @@
   font-weight: 600;
   text-align: left;
   color: black; }
+
+/* CARRITO */
+.sizeCarrito {
+  font-size: 22px; }
+
+.sizeOrdenar {
+  font-size: 15px; }
 
 /* bucles */
 .fontTamanio1 {
@@ -722,7 +738,14 @@
     font-size: 16px; }
   .footer__fuente {
     font-size: 18px;
-    text-align: center; } }
+    text-align: center; }
+  /* CARRITO */
+  .sizeCarrito {
+    font-size: 20px; }
+  .sizeDolar {
+    font-size: 17px; }
+  .sizeTabla {
+    font-size: 15px; } }
 
 /* Formulario */
 .formulario__boxmod {
