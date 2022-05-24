@@ -1,44 +1,44 @@
 [
-    { 
-        "id": 1, 
-        "producto": "Ñoquis de papa con salsa fileto" ,
-        "nombre":"Ñoquis",
-        "foto": "./assets/img/ñoquisSalsa.jpg" ,
+    {
+        "id": 1,
+        "producto": "Ñoquis de papa con salsa fileto",
+        "nombre": "Ñoquis",
+        "foto": "./assets/img/ñoquisSalsa.jpg",
         "precio": 800
     },
-    { 
-        "id": 2, 
-        "producto": "Fideos de verdura con salsa bolognesa" ,
-        "nombre":"Fideos",
-        "foto": "./assets/img/fideosVerdes.jpg", 
+    {
+        "id": 2,
+        "producto": "Fideos de verdura con salsa bolognesa",
+        "nombre": "Fideos",
+        "foto": "./assets/img/fideosVerdes.jpg",
         "precio": 700
     },
     {
-        "id": 3, 
+        "id": 3,
         "producto": "Ravioles de ricota con salsa bolognesa",
-        "nombre":"Ravioles",
-        "foto": "./assets/img/raviolesSalsa.jpg", 
-        "precio": 500 
+        "nombre": "Ravioles",
+        "foto": "./assets/img/raviolesSalsa.jpg",
+        "precio": 500
     },
-    {   
-        "id": 4, 
-        "producto": "Agnolotis de jamon y queso con salsa bolognesa" ,
-        "nombre":"Agnolotis",
-        "foto": "./assets/img/pastas5.jpg ", 
+    {
+        "id": 4,
+        "producto": "Agnolotis de jamon y queso con salsa bolognesa",
+        "nombre": "Agnolotis",
+        "foto": "./assets/img/pastas5.jpg ",
         "precio": 1000
     },
-    { 
-        "id": 5, 
-        "producto": "Empanada de carne" ,
-        "nombre":"Empanada",
-        "foto": "./assets/img/empanadas.jpg", 
-        "precio": 90 
+    {
+        "id": 5,
+        "producto": "Empanada de carne",
+        "nombre": "Empanada",
+        "foto": "./assets/img/empanadas.jpg",
+        "precio": 90
     },
-    { 
-        "id": 6, 
-        "producto": "Cervezas Importadas" ,
-        "nombre":"Cerveza",
-        "foto": "./assets/img/cervezas.jpg", 
-        "precio": 250
+    {
+        "id": 6,
+        "producto": "Cervezas Importadas",
+        "nombre": "Cerveza",
+        "foto": "./assets/img/cervezas.jpg",
+        "precio": 249
     }
 ]
