@@ -1,77 +1,149 @@
 /* predeterminadas */
-.fontGoogle {font-family: 'Jost', sans-serif; font-weight: 400;}
-.kitchen {font-family: 'Roboto Slab', serif; text-align: justify; letter-spacing: 5px}
-.since {font-family: 'Allison', cursive; font-weight: 600;}
-.desde {font-family: 'Allison', cursive;}
-.direcciones {font-family: 'Alumni Sans', sans-serif; font-weight: 400;}
-.fontGold {color: rgb(163, 121, 14)}
-.fontVerde{color:rgb(0, 54, 20)}
-.capitalize {text-transform: capitalize;}
-.centrarTxt {text-align: center;}
-.fuente__google--contenido{
-    font-family: 'Jost', sans-serif; font-weight: 600;
-    text-align: left;
-    color: black;
+.fontGoogle {
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+}
+.kitchen {
+    font-family: "Roboto Slab", serif;
+    text-align: justify;
+    letter-spacing: 5px;
+}
+.since {
+    font-family: "Allison", cursive;
+    font-weight: 600;
+}
+
+.direcciones {
+    font-family: "Alumni Sans", sans-serif;
+    font-weight: 400;
+}
+.fontGold {
+    color: rgb(163, 121, 14);
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+.centrarTxt {
+    text-align: center;
 }
 
 /* CARRITO */
-.sizeCarrito {font-size: 22px;}
-.sizeOrdenar {font-size: 15px;}
-
-
+.sizeCarrito {
+    font-size: 22px;
+}
+.sizeOrdenar {
+    font-size: 15px;
+}
 
 /* bucles */
 @for $i from 1 through 10 {
-	.fontTamanio#{$i}{
-	font-size:10px * $i;
-	}
+    .fontTamanio#{$i} {
+        font-size: 10px * $i;
+    }
 }
 
-.footer__fuente {font-size: 20px;  text-align: center; }
-.font__encabezado{font-size: 50px; }
-.font__parrafo{font-size: 30px; }
-.font__encabezado--fideos{font-size: 50px;}
-.font__parrafo--fideos{font-size: 30px;}
-.font__center{text-align: center;}
-.font__left{text-align: left;}
-.portada__titulo {font-weight: 900;}
+.footer__fuente {
+    font-size: 20px;
+    text-align: center;
+}
+
+.font__parrafo {
+    font-size: 30px;
+}
+.font__encabezado--fideos {
+    font-size: 50px;
+}
+
+.font__center {
+    text-align: center;
+}
+.font__left {
+    text-align: left;
+}
+.portada__titulo {
+    font-weight: 900;
+}
 /*map-get*/
 $estilos: (
-  tFuente: 40px,
-  ttFuente:50px,
-  tttFuente:center
+    tFuente: 40px,
+    ttFuente: 50px,
+    tttFuente: center,
 );
 
-.font_adrogue{
-  font-size:map-get($estilos, tFuente);
+.font_adrogue {
+    font-size: map-get($estilos, tFuente);
 }
-.font__encabezado--fideos{
-    font-size:map-get($estilos, ttFuente);
+.font__encabezado--fideos {
+    font-size: map-get($estilos, ttFuente);
 }
-.fontCenter{
-    text-align:map-get($estilos, tttFuente);
+.fontCenter {
+    text-align: map-get($estilos, tttFuente);
 }
 
-
-.horarios h2 {text-align:center ; font-size: 45px; padding-bottom: 25px; color: $gold;}
-.horarios li {list-style:none;}
-.days {font-size: 25px; color: black;}
-.hours {font-size: 15px; color: black;}
-
+.horarios h2 {
+    text-align: center;
+    font-size: 45px;
+    padding-bottom: 25px;
+    color: $gold;
+}
+.horarios li {
+    list-style: none;
+}
+.days {
+    font-size: 25px;
+    color: black;
+}
+.hours {
+    font-size: 15px;
+    color: black;
+}
 
 /* vista mobile */
-@media only screen and (max-width: 767px){
-    .footer__fuente{font-size: 15px; text-align: center; margin-bottom: 3px;}
-    .imgLogo {width: 200px; height: 200px;}
-    .fuente__google--contenido{text-align: center;}
-    .empanadas__titulo--mobile{font-size: 50px; text-align: center}
-    .empanadas__parrafo--mobile{font-size: 25px; text-align: left;}
-    .boxmodCentrarMobile {display: flex; justify-content: center; align-items: center;}
-    .fontMobileTitulo{font-size: 40px;}
-    .fontMobileParrafo{font-size: 16px;}
-    .footer__fuente {font-size: 18px;  text-align: center;}
+@media only screen and (max-width: 767px) {
+    .footer__fuente {
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 3px;
+    }
+    .imgLogo {
+        width: 200px;
+        height: 200px;
+    }
+    .fuente__google--contenido {
+        text-align: center;
+    }
+    .empanadas__titulo--mobile {
+        font-size: 50px;
+        text-align: center;
+    }
+    .empanadas__parrafo--mobile {
+        font-size: 25px;
+        text-align: left;
+    }
+    .boxmodCentrarMobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .fontMobileTitulo {
+        font-size: 40px;
+    }
+    .fontMobileParrafo {
+        font-size: 16px;
+    }
+    .footer__fuente {
+        font-size: 18px;
+        text-align: center;
+    }
     /* CARRITO */
-    .sizeCarrito {font-size: 20px;}
-    .sizeDolar{font-size: 17px;}
-    .sizeTabla{font-size: 15px;}
+    .sizeCarrito {
+        font-size: 20px;
+    }
+    .sizeDolar {
+        font-size: 17px;
+    }
+    .sizeTabla {
+        font-size: 11px;
+    }
 }

@@ -1,17 +1,62 @@
-.container-fluid{padding-left: 0px;padding-right: 0px;}
-.contenido__img {width: 500px; height: 400px;}
-.tamanioDesktop {width: 100px; height: 50px;}
-.carousel-inner {width: 100%; height: 20%}
-.horarios__img {width: 100%; height: 100%;}
-.footer__img {width: 100px; height: 50px;}
-.img-slider {width: 200px; height: 200px;}
-@media only screen and (max-width: 767px){
-    .padFiambre{padding-top: 50px;}
-    .contenido__img{width: 400px; height: 300px; padding: 30px;}
-    .logoSuperior {width: 100px; height: 50px;}
-    .tamanioTitulo{font-size: 50px;}
-    .tamanioParrafo{font-size: 25px;}
-    .tamanioResto{font-size: 20px;}
-    .iframe {height: 250px;}
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
 }
-
+.contenido__img {
+    width: 500px;
+    height: 400px;
+}
+.imgCxC {
+    max-width: 100%;
+    width: 350px;
+    height: 350px;
+}
+.tamanioDesktop {
+    width: 100px;
+    height: 50px;
+}
+.carousel-inner {
+    width: 100%;
+    height: 20%;
+}
+.horarios__img {
+    width: 100%;
+    height: 100%;
+}
+.footer__img {
+    width: 100px;
+    height: 50px;
+}
+.img-slider {
+    width: 200px;
+    height: 200px;
+}
+@media only screen and (max-width: 767px) {
+    .padFiambre {
+        padding-top: 50px;
+    }
+    .contenido__img {
+        width: 400px;
+        height: 300px;
+        padding: 30px;
+    }
+    .logoSuperior {
+        width: 100px;
+        height: 50px;
+    }
+    .tamanioTitulo {
+        font-size: 50px;
+    }
+    .tamanioParrafo {
+        font-size: 25px;
+    }
+    .tamanioResto {
+        font-size: 20px;
+    }
+    .iframe {
+        height: 250px;
+    }
+    .fontTamanio5 {
+        font-size: 25px;
+    }
+}

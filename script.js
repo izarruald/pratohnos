@@ -49,20 +49,19 @@ const productos = [
 
 
 //tabla con DOM
-let tabla = document.createElement("table");
-tabla.setAttribute("class", "table table-striped");
-let tablaBody = document.createElement("tbody");
+let tabla = document.createElement("table"); //creo tabla
+tabla.setAttribute("class", "table table-striped"); //a la tabla le pongo una class, y unas clases
+let tablaBody = document.createElement("tbody");//creo tbody 
 
-for (const producto of productos) {
-    //crear las filas con sus celdas
-    let fila = document.createElement("tr");
+for (const producto of productos) { //hago una constante que va entrando en los objetos del array 
+    let fila = document.createElement("tr");//crear las filas con sus celdas
     //plantillas literales
     fila.innerHTML = `<td> ${producto.id}</td>
     <td>${producto.producto}</td>
     <td><b>$ ${producto.precio}</b></td>`;
     
     //guarda la final
-    tablaBody.appendChild(fila);
+    tablaBody.appendChild(fila);// y a tbody/tablaBody le agregan fila 
 }
 
 

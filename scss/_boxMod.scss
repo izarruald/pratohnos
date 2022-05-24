@@ -1,50 +1,131 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
 }
 @import "tamanios";
 @import "colores";
 /* camelCase */
-.display {display: none;}
-.padding {padding-left: 0px; padding-right: 0px;}
-.paddingSpace {padding: 5px;}
-.paddingT {padding-top: 40px;}
-.paddingB {padding-bottom: 40px;}
-.paddingTB {padding-top: 50px;padding-bottom: 50px;}
-.paddingLeft {padding-left: 3%;}
-.margin {margin: 10px;}
-.marginB {margin-bottom: 5px;}
-.marginBB {margin-bottom: 18px;}
-.boxmodCentrar {display: flex; justify-content: center; align-items: center;}
+.display {
+    display: none;
+}
+.padding {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.paddingSpace {
+    padding: 5px;
+}
+.paddingT {
+    padding-top: 40px;
+}
+.paddingB {
+    padding-bottom: 40px;
+}
+.paddingTB {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.paddingLeft {
+    padding-left: 3%;
+}
+.margin {
+    margin: 10px;
+}
+.marginB {
+    margin-bottom: 5px;
+}
+.marginBB {
+    margin-bottom: 18px;
+}
+.boxmodCentrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centrarBoton {
+    margin: 0 auto;
+}
 .boxmodDer {
     display: flex;
     justify-content: end;
-    align-items: center;}
-.boxmodIzq {display: flex; justify-content: center; align-items: center;}
-/* editados de BEM */
-.redes__padding{padding-left: 8px; padding-right: 8px; padding-bottom: 15px; text-decoration: none;}
-.nosotros {padding-bottom: 60px;}
-.row {margin-right: 0px; margin-left: 0px;}
-.d-flex {justify-content: center;}
-.footer__margin{margin-bottom: 3px;}
-.footer__telefono {padding-top: 75px;}
-.footer__seguinos {padding-top: 25px;}
-.footer__paddingTB {padding-top: 40px;padding-bottom: 10px;}
-.imgRedonda {
-    width:300px;
-    height:300px;
-    border-radius:150px;
+    align-items: center;
 }
 
-@media only screen and (min-width: 1024px){
-    .navbar-expand-lg .navbar-collapse{justify-content: flex-end;}
-    }
+.boxmodCentro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.boxmodIzq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* editados de BEM */
+.redes__padding {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 15px;
+    text-decoration: none;
+}
+.nosotros {
+    padding-bottom: 60px;
+}
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.d-flex {
+    justify-content: center;
+}
+.footer__margin {
+    margin-bottom: 3px;
+}
+.footer__telefono {
+    padding-top: 75px;
+}
+.footer__seguinos {
+    padding-top: 25px;
+}
+.footer__paddingTB {
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+.imgRedonda {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+}
+.bordeTabla {
+    border: 10px solid white;
+}
+.bordeRaduis {
+    border-radius: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: flex-end;
+    }
+}
 
 @media only screen and (max-width: 767px) {
-    .paddingTBmobile {padding-top: 40px;padding-bottom: 20px;}
-    .formulario__boxmod {width: 350px;}
-    .footer__img--mobile {padding-top: 25px; padding-bottom: 25px;}
-    .paddingTmobile {padding-top: 0px;}
-    .footer__telefono {padding-top: 30px;}
+    .paddingTBmobile {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    .formulario__boxmod {
+        width: 350px;
+    }
+    .footer__img--mobile {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .paddingTmobile {
+        padding-top: 0px;
+    }
+    .footer__telefono {
+        padding-top: 30px;
+    }
 }

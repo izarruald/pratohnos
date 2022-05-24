@@ -23,6 +23,15 @@
 .verde {
   color: #003614; }
 
+.redes__color--twitter:hover {
+  color: #41aaeb; }
+
+.redes__color--facebook:hover {
+  color: #181877; }
+
+.redes__color--instagram:hover {
+  color: #992f6d; }
+
 .linkG:hover {
   color: #a3790e;
   text-decoration: none; }
@@ -34,15 +43,6 @@
 .linkV:hover {
   color: #003614;
   text-decoration: none; }
-
-.redes__color--twitter:hover {
-  color: #41aaeb; }
-
-.redes__color--facebook:hover {
-  color: #181877; }
-
-.redes__color--instagram:hover {
-  color: #992f6d; }
 
 .formulario__input:hover, .formulario__input--medio:hover {
   background-color: white;
@@ -98,6 +98,11 @@
   width: 500px;
   height: 400px; }
 
+.imgCxC {
+  max-width: 100%;
+  width: 350px;
+  height: 350px; }
+
 .tamanioDesktop {
   width: 100px;
   height: 50px; }
@@ -135,7 +140,9 @@
   .tamanioResto {
     font-size: 20px; }
   .iframe {
-    height: 250px; } }
+    height: 250px; }
+  .fontTamanio5 {
+    font-size: 25px; } }
 
 .row {
   display: flex; }
@@ -155,6 +162,11 @@
   width: 500px;
   height: 400px; }
 
+.imgCxC {
+  max-width: 100%;
+  width: 350px;
+  height: 350px; }
+
 .tamanioDesktop {
   width: 100px;
   height: 50px; }
@@ -192,7 +204,9 @@
   .tamanioResto {
     font-size: 20px; }
   .iframe {
-    height: 250px; } }
+    height: 250px; }
+  .fontTamanio5 {
+    font-size: 25px; } }
 
 .colorNegro {
   color: black; }
@@ -218,6 +232,15 @@
 .verde {
   color: #003614; }
 
+.redes__color--twitter:hover {
+  color: #41aaeb; }
+
+.redes__color--facebook:hover {
+  color: #181877; }
+
+.redes__color--instagram:hover {
+  color: #992f6d; }
+
 .linkG:hover {
   color: #a3790e;
   text-decoration: none; }
@@ -229,15 +252,6 @@
 .linkV:hover {
   color: #003614;
   text-decoration: none; }
-
-.redes__color--twitter:hover {
-  color: #41aaeb; }
-
-.redes__color--facebook:hover {
-  color: #181877; }
-
-.redes__color--instagram:hover {
-  color: #992f6d; }
 
 .formulario__input:hover, .formulario__input--medio:hover {
   background-color: white;
@@ -323,9 +337,17 @@
   justify-content: center;
   align-items: center; }
 
+.centrarBoton {
+  margin: 0 auto; }
+
 .boxmodDer {
   display: flex;
   justify-content: end;
+  align-items: center; }
+
+.boxmodCentro {
+  display: flex;
+  justify-content: center;
   align-items: center; }
 
 .boxmodIzq {
@@ -367,6 +389,12 @@
   width: 300px;
   height: 300px;
   border-radius: 150px; }
+
+.bordeTabla {
+  border: 10px solid white; }
+
+.bordeRaduis {
+  border-radius: 10px; }
 
 @media only screen and (min-width: 1024px) {
   .navbar-expand-lg .navbar-collapse {
@@ -410,6 +438,15 @@
 .verde {
   color: #003614; }
 
+.redes__color--twitter:hover {
+  color: #41aaeb; }
+
+.redes__color--facebook:hover {
+  color: #181877; }
+
+.redes__color--instagram:hover {
+  color: #992f6d; }
+
 .linkG:hover {
   color: #a3790e;
   text-decoration: none; }
@@ -421,15 +458,6 @@
 .linkV:hover {
   color: #003614;
   text-decoration: none; }
-
-.redes__color--twitter:hover {
-  color: #41aaeb; }
-
-.redes__color--facebook:hover {
-  color: #181877; }
-
-.redes__color--instagram:hover {
-  color: #992f6d; }
 
 .formulario__input:hover, .formulario__input--medio:hover {
   background-color: white;
@@ -584,42 +612,30 @@
 
 /* predeterminadas */
 .fontGoogle {
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-weight: 400; }
 
 .kitchen {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   text-align: justify;
   letter-spacing: 5px; }
 
 .since {
-  font-family: 'Allison', cursive;
+  font-family: "Allison", cursive;
   font-weight: 600; }
 
-.desde {
-  font-family: 'Allison', cursive; }
-
 .direcciones {
-  font-family: 'Alumni Sans', sans-serif;
+  font-family: "Alumni Sans", sans-serif;
   font-weight: 400; }
 
 .fontGold {
   color: #a3790e; }
-
-.fontVerde {
-  color: #003614; }
 
 .capitalize {
   text-transform: capitalize; }
 
 .centrarTxt {
   text-align: center; }
-
-.fuente__google--contenido {
-  font-family: 'Jost', sans-serif;
-  font-weight: 600;
-  text-align: left;
-  color: black; }
 
 /* CARRITO */
 .sizeCarrito {
@@ -663,17 +679,11 @@
   font-size: 20px;
   text-align: center; }
 
-.font__encabezado {
-  font-size: 50px; }
-
 .font__parrafo {
   font-size: 30px; }
 
 .font__encabezado--fideos {
   font-size: 50px; }
-
-.font__parrafo--fideos {
-  font-size: 30px; }
 
 .font__center {
   text-align: center; }
@@ -745,7 +755,7 @@
   .sizeDolar {
     font-size: 17px; }
   .sizeTabla {
-    font-size: 15px; } }
+    font-size: 11px; } }
 
 /* Formulario */
 .formulario__boxmod {
