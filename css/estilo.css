@@ -5,14 +5,17 @@
 .colorBlanco {
   color: white; }
 
+.colorNosotros {
+  color: black; }
+
 .color__gold {
   color: #a3790e; }
 
 .colorGold {
   color: #a3790e; }
 
-.colorFondo {
-  color: #d1af59; }
+.fontNosotros {
+  color: #c0972f; }
 
 .redes__color--blanco {
   color: #a3790e; }
@@ -88,6 +91,8 @@
 /* vista mobile */
 @media only screen and (max-width: 767px) {
   .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: white; }
+  .colorNosotros {
     color: white; } }
 
 .container-fluid {
@@ -123,6 +128,9 @@
   width: 200px;
   height: 200px; }
 
+.fuenteInicio {
+  font-size: 45px; }
+
 @media only screen and (max-width: 767px) {
   .padFiambre {
     padding-top: 50px; }
@@ -141,7 +149,7 @@
     font-size: 20px; }
   .iframe {
     height: 250px; }
-  .fontTamanio5 {
+  .fuenteInicio {
     font-size: 25px; } }
 
 .row {
@@ -187,6 +195,9 @@
   width: 200px;
   height: 200px; }
 
+.fuenteInicio {
+  font-size: 45px; }
+
 @media only screen and (max-width: 767px) {
   .padFiambre {
     padding-top: 50px; }
@@ -205,7 +216,7 @@
     font-size: 20px; }
   .iframe {
     height: 250px; }
-  .fontTamanio5 {
+  .fuenteInicio {
     font-size: 25px; } }
 
 .colorNegro {
@@ -214,14 +225,17 @@
 .colorBlanco {
   color: white; }
 
+.colorNosotros {
+  color: black; }
+
 .color__gold {
   color: #a3790e; }
 
 .colorGold {
   color: #a3790e; }
 
-.colorFondo {
-  color: #d1af59; }
+.fontNosotros {
+  color: #c0972f; }
 
 .redes__color--blanco {
   color: #a3790e; }
@@ -297,6 +311,8 @@
 /* vista mobile */
 @media only screen and (max-width: 767px) {
   .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: white; }
+  .colorNosotros {
     color: white; } }
 
 /* camelCase */
@@ -355,6 +371,15 @@
   justify-content: center;
   align-items: center; }
 
+.nosotrosBoxmod {
+  width: 800px;
+  background-color: rgba(255, 255, 255, 0.397);
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  box-shadow: 7px 13px 37px #000; }
+
 /* editados de BEM */
 .redes__padding {
   padding-left: 8px;
@@ -391,10 +416,15 @@
   border-radius: 150px; }
 
 .bordeTabla {
-  border: 10px solid white; }
+  border: 2px solid #faf7f7;
+  padding: 10px;
+  border-radius: 25px; }
 
 .bordeRaduis {
   border-radius: 10px; }
+
+.list-group {
+  flex-direction: row; }
 
 @media only screen and (min-width: 1024px) {
   .navbar-expand-lg .navbar-collapse {
@@ -412,7 +442,10 @@
   .paddingTmobile {
     padding-top: 0px; }
   .footer__telefono {
-    padding-top: 30px; } }
+    padding-top: 30px; }
+  .nosotrosBoxmod {
+    width: 90%;
+    margin-top: 0px; } }
 
 .colorNegro {
   color: black; }
@@ -420,14 +453,17 @@
 .colorBlanco {
   color: white; }
 
+.colorNosotros {
+  color: black; }
+
 .color__gold {
   color: #a3790e; }
 
 .colorGold {
   color: #a3790e; }
 
-.colorFondo {
-  color: #d1af59; }
+.fontNosotros {
+  color: #c0972f; }
 
 .redes__color--blanco {
   color: #a3790e; }
@@ -503,6 +539,8 @@
 /* vista mobile */
 @media only screen and (max-width: 767px) {
   .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: white; }
+  .colorNosotros {
     color: white; } }
 
 .warnings {
@@ -543,16 +581,6 @@
   background-repeat: no-repeat;
   background-size: cover; }
 
-/* .paralax {
-    background-image: url(../img/Green\ and\ Yellow\ Plate\ of\ Pasta\ Direct\ Mail\ Postcard.jpg);
-    height: 100%;
-    background-attachment: fixed;
-    background-position:center ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 50px 30px;
-    margin-bottom: 50px;
-} */
 .backgroundVerde {
   background-color: #003614; }
 
@@ -595,8 +623,8 @@
 @media only screen and (max-width: 767px) {
   .backgroundBlancoMobile {
     background-color: rgba(255, 255, 255, 0.815); }
-  .fondo-img-ñoquis-mobile {
-    background-image: url(../assets/img/ñoquis-dc.jpg);
+  .fondo-img-ñoquis {
+    background-image: url(../assets/img/1.png);
     height: 100%;
     width: 100%;
     background-attachment: fixed;
@@ -604,10 +632,18 @@
     background-repeat: no-repeat;
     background-size: cover; }
   .fondo-img-fideos-mobile {
-    background: url(../assets/img/fideos-mobile.png) no-repeat center center fixed;
+    background: url(../assets/img/fondoMobile.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-size: cover; }
+  .fondo-img {
+    background-image: url(../assets/img/fondoMobile.png);
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover; } }
 
 /* predeterminadas */
@@ -618,7 +654,7 @@
 .kitchen {
   font-family: "Roboto Slab", serif;
   text-align: justify;
-  letter-spacing: 5px; }
+  letter-spacing: 2px; }
 
 .since {
   font-family: "Allison", cursive;

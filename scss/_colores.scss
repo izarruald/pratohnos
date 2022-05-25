@@ -8,9 +8,10 @@ $verde:rgb(0, 54, 20);
 $gold: rgb(163, 121, 14);
 .colorNegro {color: black;}
 .colorBlanco{color: white;}
+.colorNosotros{color: black;}
 .color__gold{color: $gold;}
 .colorGold{color: $gold;}
-.colorFondo {color: rgb(209, 175, 89);}
+.fontNosotros{color: rgb(192, 151, 47);}
 .redes__color--blanco{color: $gold;}
 .redes__color--verde{color: $verde;}
 .verde{color:rgb(0, 54, 20);}
@@ -48,4 +49,5 @@ $gold: rgb(163, 121, 14);
     .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
         color:$blanco;
     }
+    .colorNosotros{color: white;}
 }

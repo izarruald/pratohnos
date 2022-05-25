@@ -62,6 +62,16 @@
     justify-content: center;
     align-items: center;
 }
+
+.nosotrosBoxmod{
+    width: 800px;
+    background-color: rgba(255, 255, 255, 0.397);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    box-shadow: 7px 13px 37px #000;
+}
 /* editados de BEM */
 .redes__padding {
     padding-left: 8px;
@@ -98,10 +108,16 @@
     border-radius: 150px;
 }
 .bordeTabla {
-    border: 10px solid white;
+    border: 2px solid rgb(250, 247, 247);
+    padding: 10px;
+    border-radius: 25px;
 }
 .bordeRaduis {
     border-radius: 10px;
+}
+
+.list-group{
+    flex-direction: row;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -127,5 +143,9 @@
     }
     .footer__telefono {
         padding-top: 30px;
+    }
+    .nosotrosBoxmod{
+        width: 90%;
+        margin-top: 0px;
     }
 }

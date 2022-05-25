@@ -31,6 +31,9 @@
     width: 200px;
     height: 200px;
 }
+.fuenteInicio{
+    font-size: 45px;
+}
 @media only screen and (max-width: 767px) {
     .padFiambre {
         padding-top: 50px;
@@ -56,7 +59,7 @@
     .iframe {
         height: 250px;
     }
-    .fontTamanio5 {
+    .fuenteInicio{
         font-size: 25px;
     }
 }
